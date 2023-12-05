@@ -1,0 +1,60 @@
+{
+  "navs_Left": [{ "navLeft": "매장안내" }, { "navLeft": "멤버쉽" }],
+  "navs_Right": [
+    { "navRight": "로그인" },
+    { "navRight": "회원가입" },
+    { "navRight": "장바구니" }
+  ],
+  "navs_Main": [
+    { "navMain": "고디바메뉴" },
+    { "navMain": "온라인상품" },
+    { "navMain": "뉴스&이벤트" },
+    { "navMain": "고디바이야기" },
+    { "navMain": "디저트카페" }
+  ],
+  "section2TopContents": [
+    {
+      "sec2TextsMain": "고디바 신규 회원 15% 할인 +4,000P 혜택",
+      "sec2TextsSub": "회원님만의 특별한 혜택을 받아보세요."
+    },
+    {
+      "sec2TextsMain": "고디바 베스트 아이템 GODIVA BEST ITEM",
+      "sec2TextsSub": "회원님만의 특별한 혜택을 받아보세요."
+    },
+    {
+      "sec2TextsMain": "초콜릿 레이어 케이크 Chocolate Layer Cake",
+      "sec2TextsSub": "소중한 사람에게 달콤함을 전하세요."
+    }
+  ],
+  "section2BottomContents": [
+    { "sec2TextsB": "골드 컬렉션" },
+    { "sec2TextsB": "큐브 트뤼프" }
+  ],
+  "footerContents": [
+    {
+      "footerTitle": "사이트맵",
+      "footerDetail": [
+        "개인정보 처리방침",
+        "약관 개정 안내",
+        "마케팅 제휴/매장오픈",
+        "사업자 정보"
+      ]
+    },
+    {
+      "footerTitle": "고객 서비스",
+      "footerDetail": ["고객센터", "FAQ", "1:1문의", "주문/배송/대량구매"]
+    },
+    {
+      "footerTitle": "운영시간",
+      "footerDetail": [
+        "TEL. 080-759-7700",
+        "평일 10:00 ~ 17:00   (점심시간 12:00 ~ 13:00)",
+        "토,일, 공휴일 휴무"
+      ]
+    },
+    {
+      "footerTitle": "SNS",
+      "footerDetail": ""
+    }
+  ]
+}

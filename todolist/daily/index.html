@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="Ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="contents">
+        <div class="today_list">
+          <div class="enter_wrap">
+            <form>
+              <input class="todo" type="text" placeholder="오늘의 할일" />
+              <input class="enter" type="submit" value="입력" />
+            </form>
+          </div>
+          <ul>
+            <li>
+              <span class="pointer"></span>
+              오늘 뭐하지?
+            </li>
+            <li><span class="pointer"></span>오늘 뭐하지?</li>
+          </ul>
+        </div>
+        <div class="daily_list">
+          <div class="enter_wrap">
+            <form>
+              <input class="todo" type="text" placeholder="데일리 루틴" />
+              <input class="enter" type="submit" value="입력" />
+            </form>
+          </div>
+          <ul>
+            <li>
+              <span class="pointer"></span>
+              오늘 뭐할꺼
+            </li>
+            <li><span class="pointer"></span>오늘 뭐할꺼?</li>
+          </ul>
+        </div>
+        <div class="notes">
+          <textarea name="note" id="note" cols="30" rows="10">
+            참고사항
+          </textarea>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Roboto:wght@400;500&family=Sora&display=swap");
+// font-family: 'Jomhuria', serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Sora', sans-serif;
+
+// reset css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// common css
+
+$color: (
+  listpink: #ffcee3,
+  listlemon: #fff8b6,
+  listblue: #bef9e7,
+  maingray: #a5a5a5,
+  maintext: #222222,
+  darkgray: #6f6f6f,
+  important: #ff7070,
+);
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: map-get($color, listpink);
+  }
+}
+
+// contents css
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90%;
+  height: 90%;
+  background: white;
+  .enter_wrap {
+    margin: 30px 0 10px 0;
+    width: 256px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: map-get($color, listpink);
+    form {
+      border-radius: 5px;
+      height: 30px;
+      width: 240px;
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 3px;
+      .todo {
+        width: 190px;
+        height: 20px;
+        border: none;
+        ::placeholder {
+          color: map-get($color, maingray);
+          font-size: 16px;
+          font-family: Sora;
+        }
+      }
+      .enter {
+        border: none;
+        background: map-get($color, listpink);
+        color: map-get($color, maingray);
+        width: 43px;
+        height: 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+  ul {
+    border: 1px solid salmon;
+    li {
+      text-decoration: underline 2px map-get($color, listpink);
+      .pointer {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: map-get($color, listpink);
+      }
+    }
+  }
+}

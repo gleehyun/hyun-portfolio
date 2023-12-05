@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Roboto:wght@400;500&family=Sora&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 844px;
+  width: 390px;
+  background: sandybrown;
+}
+
+.nav {
+  width: 350px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 5px;
+}
+.nav .nav_left {
+  background: #a5a5a5;
+  width: 70px;
+  height: 27px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav_left p {
+  font-family: Jomhuria;
+  font-size: 32px;
+  margin: 3px;
+  margin-top: 8px;
+}
+.nav .nav_left p:nth-child(1) {
+  color: #bef9e7;
+}
+.nav .nav_left p:nth-child(2) {
+  color: #fff8b6;
+}
+.nav .nav_left p:nth-child(3) {
+  color: #ffcee3;
+}
+.nav .nav_right {
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: -3.5%;
+  color: #a5a5a5;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contents .buttons {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.contents .buttons button {
+  width: 33.2%;
+  height: 100%;
+  color: #a5a5a5;
+  border-radius: 5px 5px 0 0;
+  border: none;
+  text-align: center;
+  font-family: Jomhuria;
+  font-size: 32px;
+}
+.contents .buttons button:nth-child(1) {
+  background: #ffcee3;
+}
+.contents .buttons button:nth-child(2) {
+  background: #fff8b6;
+}
+.contents .buttons button:nth-child(3) {
+  background: #bef9e7;
+}
+.contents iframe {
+  width: 100%;
+  height: 779px;
+}/*# sourceMappingURL=style.css.map */

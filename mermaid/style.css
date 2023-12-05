@@ -1,0 +1,107 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common */
+body{
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+
+}
+
+/* section */
+section {
+  position: relative;
+  width: 100%;
+}
+
+section .image_wrap {
+  height: 100vh;
+}
+
+section .image_wrap .sea_image {
+  width: 100%;
+  height: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: top center/cover no-repeat;
+}
+
+/* background pictures css */
+#back_inner .sea_image:nth-child(1) {
+  background-image: url(./img/background/background0.png);
+}
+#back_inner .sea_image:nth-child(2) {
+  background-image: url(./img/background/background01.png);
+}
+#back_inner .sea_image:nth-child(3) {
+  background-image: url(./img/background/background02.png);
+}
+#back_inner .sea_image:nth-child(4) {
+  background-image: url(./img/background/background03.png);
+}
+#back_inner .sea_image:nth-child(5) {
+  background-image: url(./img/background/background04.png);
+}
+
+/* fish pictures css */
+#fish_inner .sea_image:nth-child(1) {
+  background-image: url(./img/fish/fish05.png);
+}
+#fish_inner .sea_image:nth-child(2) {
+  background-image: url(./img/fish/fish06.png);
+}
+#fish_inner .sea_image:nth-child(3) {
+  background-image: url(./img/fish/fish07.png);
+}
+#fish_inner .sea_image:nth-child(4) {
+  background-image: url(./img/fish/fish08.png);
+}
+#fish_inner .sea_image:nth-child(5) {
+  background-image: url(./img/fish/fish09.png);
+}
+#fish_inner .sea_image:nth-child(6) {
+  background-image: url(./img/fish/fish10.png);
+}
+#fish_inner .sea_image:nth-child(7) {
+  background-image: url(./img/fish/fish11.png);
+}
+
+/* mermaid pictures css */
+#mermaid_inner .sea_image:nth-child(1){
+  background-image: url(./img/mermaid/mermaid12.png);
+}
+#mermaid_inner .sea_image:nth-child(2){
+  background-image: url(./img/mermaid/mermaid13.png);
+}
+#mermaid_inner .sea_image:nth-child(3){
+  background-image: url(./img/mermaid/mermaid14.png);
+}
+#mermaid_inner .sea_image:nth-child(4){
+  background-image: url(./img/mermaid/mermaid15.png);
+}
+#mermaid_inner .sea_image:nth-child(5){
+  background-image: url(./img/mermaid/mermaid16.png);
+}
+#mermaid_inner .sea_image:nth-child(6){
+  background-image: url(./img/mermaid/mermaid17.png);
+}
+#mermaid_inner .sea_image:nth-child(7){
+  background-image: url(./img/mermaid/mermaid18.png);
+}
+
+/* light pictures css */
+#light_inner .sea_image:nth-child(1) {
+  background-image: url(./img/light/light19.png);
+}
+#light_inner .sea_image:nth-child(2) {
+  background-image: url(./img/light/light20.png);
+}

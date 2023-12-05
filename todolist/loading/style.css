@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Roboto:wght@400;500&family=Sora&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  background: #a5a5a5;
+  width: 105px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo p {
+  font-family: Jomhuria;
+  font-size: 48px;
+  margin: 3px;
+  margin-top: 12px;
+}
+.logo p:nth-child(1) {
+  color: #bef9e7;
+}
+.logo p:nth-child(2) {
+  color: #fff8b6;
+}
+.logo p:nth-child(3) {
+  color: #ffcee3;
+}
+
+.loading {
+  width: 90px;
+  height: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.loading span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #a5a5a5;
+  border-radius: 50%;
+  animation: loading 1.2s linear infinite;
+}
+.loading span:nth-child(1) {
+  animation-delay: 0s;
+  background: #ffcee3;
+}
+.loading span:nth-child(2) {
+  animation-delay: 0.2s;
+  background: #fff8b6;
+}
+.loading span:nth-child(3) {
+  animation-delay: 0.4s;
+  background: #bef9e7;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}/*# sourceMappingURL=style.css.map */
