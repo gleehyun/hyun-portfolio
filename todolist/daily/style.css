@@ -62,6 +62,11 @@ body .wrap {
   height: 20px;
   border: none;
 }
+.contents .enter_wrap form .todo ::-moz-placeholder {
+  color: #a5a5a5;
+  font-size: 16px;
+  font-family: Sora;
+}
 .contents .enter_wrap form .todo ::placeholder {
   color: #a5a5a5;
   font-size: 16px;
@@ -79,7 +84,8 @@ body .wrap {
   border: 1px solid salmon;
 }
 .contents ul li {
-  text-decoration: underline 2px #ffcee3;
+  -webkit-text-decoration: underline 2px #ffcee3;
+          text-decoration: underline 2px #ffcee3;
 }
 .contents ul li .pointer {
   width: 10px;
