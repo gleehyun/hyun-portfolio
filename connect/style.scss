@@ -41,7 +41,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 120px;
   background: black;
   z-index: 999;
@@ -49,9 +49,11 @@ header {
   align-items: center;
   justify-content: center;
   .header_inner {
+    position: relative;
     width: 1600px;
+    height: 120px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     .toggle {
       width: 60px;
@@ -72,18 +74,52 @@ header {
       }
     }
     h4 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: #fff;
       font-size: 36px;
     }
-    .search {
-      input {
-        background: none;
-        border: none;
-        border-bottom: 1px solid #fff;
+    .search_box{
+      position: absolute; 
+      top: 65%;      
+      right: 0;
+      width: 175px;
+      .search {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        input {
+          position: absolute;
+          bottom: 2px;
+          background: none;
+          border: none;
+          color: #fff;
+          font-size: 20px;
+          width: 140px;
+          &:focus {
+            border-color: #fff;
+            outline: none;
+          }
+          &::-webkit-search-cancel-button {
+            -webkit-appearance: none;
+            appearance: none;
+            display: none;
+          }
+    
+        }
+        img {
+          position: absolute;
+          bottom: 2px;
+          right: 0;
+          width: 33px;
+          height: 44.46px;
+        }
       }
-      img {
-        width: 33px;
-        height: 44.46;
+      hr{
+        width: 175px;
       }
     }
   }
@@ -179,6 +215,8 @@ header {
         filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
         img {
           border: 1px solid #000;
+          width: 497px;
+          height: 497px;
         }
       }
       #sec2_artist_text {
@@ -310,7 +348,7 @@ header {
         font-weight: 500;
       }
     }
-    .our_survice {
+    .our_service {
       margin-bottom: 113px;
       width: 100%;
       h3 {
@@ -318,12 +356,12 @@ header {
         font-weight: bold;
         margin-bottom: 36px;
       }
-      .survice_contents {
+      .service_contents {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .our_survice_content_frame {
+        .our_service_content_frame {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -332,7 +370,7 @@ header {
           background: #2f2f2f;
           border: 2px solid #000;
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-          .survice_content {
+          .service_content {
             position: relative;
             display: flex;
             flex-direction: column;
@@ -343,7 +381,7 @@ header {
             border: 1.5px solid #000;
             background: #fff;
             box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25) inset;
-            p {
+            li:nth-child(1) {
               color: #000;
               text-align: center;
               font-family: Noto Sans;

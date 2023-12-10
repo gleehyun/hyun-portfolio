@@ -52,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  position: relative;
   width: 90%;
   height: 90%;
   background: white;
@@ -77,6 +77,7 @@ body {
         width: 190px;
         height: 20px;
         border: none;
+        outline: none;
         ::placeholder {
           color: map-get($color, maingray);
           font-size: 16px;
@@ -90,19 +91,93 @@ body {
         width: 43px;
         height: 20px;
         border-radius: 10px;
+        transition: 0.3s;
+        &:hover{
+          background: none;
+          border: 1px solid map-get($color, listpink);
+        }
       }
     }
   }
   ul {
-    border: 1px solid salmon;
     li {
-      text-decoration: underline 2px map-get($color, listpink);
-      .pointer {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: map-get($color, listpink);
+      .list{
+        position: relative;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background: map-get($color, listpink);
+          &.important{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: map-get($color, important);
+          }
+        }
+        p{
+          position: absolute;
+          left: 20px;
+          width: 200px;
+          color:map-get($color , maintext);
+          font-family:  Roboto;
+          font-size: 16px;
+          letter-spacing: -0.56px;
+          &.finish {
+            color: rgba(34, 34, 34, 0.33);
+            font-family: Roboto;
+            font-size: 16px;
+            letter-spacing: -0.56px;
+            text-decoration-line:line-through;
+          }
+        }
+        button {
+          color: map-get($color, maingray);
+          font-family: Roboto;
+          font-size: 13px;
+          width: 40px;
+          height: 20px;
+          border-radius: 10px;
+          border: none;
+          background: map-get($color, listpink);
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover{
+            background: none;
+            border: 1px solid map-get($color, listpink);
+          }
+        }
       }
+      hr{
+        margin-top: 2px;
+        border: 1px solid map-get($color, listpink);
+      }
+    }
+  }
+  .notes {
+    position: absolute;
+    bottom: 20px;
+    height: 120px;
+    width: 90%;
+    background: #FFF4F9;
+    color: map-get($color, maingray);
+    font-family: Sora;
+    font-size: 16px;
+    p{
+      padding: 5px 0 0 5px;
+    }
+    textarea{
+      width: 100%;
+      height: 100px;
+      background: inherit;
+      border: none;
+      outline: none;
+      padding: 5px;
     }
   }
 }

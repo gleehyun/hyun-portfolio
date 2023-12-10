@@ -1,0 +1,48 @@
+{
+    "artistWorks": [
+      { "src": "./connect_img/sec2_img/sec2_1.png", 
+      "alt": "sec2_1" },
+      { "src": "./connect_img/sec2_img/sec2_2.png", 
+      "alt": "sec2_2" },
+      { "src": "./connect_img/sec2_img/sec2_3.png", 
+      "alt": "sec2_3" },
+      { "src": "./connect_img/sec2_img/sec2_4.png", 
+      "alt": "sec2_4" },
+      { "src": "./connect_img/sec2_img/sec2_5.png", 
+      "alt": "sec2_5" },
+      { "src": "./connect_img/sec2_img/sec2_6.png", 
+      "alt": "sec2_6" }
+    ],
+    "services": [
+        {
+          "name": "작품판매",
+          "link": ".",
+          "imageSrc": "./connect_img/icon/move.png",
+          "imageAlt": "move"
+        },
+        {
+          "name": "미술소식 전달",
+          "link": ".",
+          "imageSrc": "./connect_img/icon/move.png",
+          "imageAlt": "move"
+        },
+        {
+          "name": "작가와 관객 소통",
+          "link": ".",
+          "imageSrc": "./connect_img/icon/move.png",
+          "imageAlt": "move"
+        },
+        {
+          "name": "온라인 전시",
+          "link": ".",
+          "imageSrc": "./connect_img/icon/move.png",
+          "imageAlt": "move"
+        },
+        {
+          "name": "상품제작 판매",
+          "link": ".",
+          "imageSrc": "./connect_img/icon/move.png",
+          "imageAlt": "move"
+        }
+      ]
+  }

@@ -99,7 +99,17 @@ body .wrap {
 .contents .buttons button:nth-child(3) {
   background: #bef9e7;
 }
-.contents iframe {
-  width: 100%;
+.contents .buttons button:hover {
+  color: #555;
+}
+.contents .buttons button.active {
+  color: #555;
+}
+.contents .frames {
   height: 779px;
+  width: 100%;
+}
+.contents .frames iframe {
+  width: inherit;
+  height: inherit;
 }/*# sourceMappingURL=style.css.map */

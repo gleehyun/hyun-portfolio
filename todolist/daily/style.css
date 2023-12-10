@@ -34,6 +34,7 @@ body .wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   width: 90%;
   height: 90%;
   background: white;
@@ -61,11 +62,7 @@ body .wrap {
   width: 190px;
   height: 20px;
   border: none;
-}
-.contents .enter_wrap form .todo ::-moz-placeholder {
-  color: #a5a5a5;
-  font-size: 16px;
-  font-family: Sora;
+  outline: none;
 }
 .contents .enter_wrap form .todo ::placeholder {
   color: #a5a5a5;
@@ -79,17 +76,86 @@ body .wrap {
   width: 43px;
   height: 20px;
   border-radius: 10px;
+  transition: 0.3s;
 }
-.contents ul {
-  border: 1px solid salmon;
+.contents .enter_wrap form .enter:hover {
+  background: none;
+  border: 1px solid #ffcee3;
 }
-.contents ul li {
-  -webkit-text-decoration: underline 2px #ffcee3;
-          text-decoration: underline 2px #ffcee3;
+.contents ul li .list {
+  position: relative;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.contents ul li .pointer {
-  width: 10px;
-  height: 10px;
+.contents ul li .list span {
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: #ffcee3;
+}
+.contents ul li .list span.important {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ff7070;
+}
+.contents ul li .list p {
+  position: absolute;
+  left: 20px;
+  width: 200px;
+  color: #222222;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: -0.56px;
+}
+.contents ul li .list p.finish {
+  color: rgba(34, 34, 34, 0.33);
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: -0.56px;
+  text-decoration-line: line-through;
+}
+.contents ul li .list button {
+  color: #a5a5a5;
+  font-family: Roboto;
+  font-size: 13px;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #ffcee3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contents ul li .list button:hover {
+  background: none;
+  border: 1px solid #ffcee3;
+}
+.contents ul li hr {
+  margin-top: 2px;
+  border: 1px solid #ffcee3;
+}
+.contents .notes {
+  position: absolute;
+  bottom: 20px;
+  height: 120px;
+  width: 90%;
+  background: #FFF4F9;
+  color: #a5a5a5;
+  font-family: Sora;
+  font-size: 16px;
+}
+.contents .notes p {
+  padding: 5px 0 0 5px;
+}
+.contents .notes textarea {
+  width: 100%;
+  height: 100px;
+  background: inherit;
+  border: none;
+  outline: none;
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */

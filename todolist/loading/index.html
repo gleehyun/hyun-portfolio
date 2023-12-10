@@ -1,39 +1,69 @@
 <!DOCTYPE html>
-<html lang="Ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./script.js"></script>
-  </head>
-  <body>
-    <!DOCTYPE html>
-    <html lang="ko">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="/03webpublishing/01source/style.css" />
-      </head>
-      <body>
-        <!--loading page-->
-        <div class="wrap">
-          <div class="loading_page">
-            <div class="logo">
-              <p>To</p>
-              <p>do</p>
-              <p>It</p>
-            </div>
-            <div class="loading">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+    <!--loading page-->
+    <div class="wrap">
+      <div class="loading_page">
+        <div class="logo">
+          <p>To</p>
+          <p>do</p>
+          <p>It</p>
         </div>
-        <!--login page-->
-      </body>
-    </html>
-  </body>
+        <div class="loading">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!--login page-->
+    <div class="login_page">
+      <div class="logo">
+        <div class="logo_text">
+          <p>To</p>
+          <p>do</p>
+          <p>It</p>
+        </div>
+        <div class="logo_color">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="login_box">
+        <form>
+          <p>
+            <label for="id">ID</label>
+            <input
+              type="text"
+              id="id"
+              placeholder="아이디를 입력해주세요."
+            />
+          </p>
+          <p>
+            <label for="pw">PW</label>
+            <input
+              type="password"
+              id="pw"
+              placeholder="비밀번호를 입력해주세요."
+            />
+          </p>
+        </form>
+        <button>로그인 하기</button>
+      </div>
+      <div id="login_underbox">
+        <button>아이디 비밀번호 찾기</button>
+        <div id="line">|</div>
+        <button>회원가입하기</button>
+      </div>
+      <div id="date"></div>
+    </div>
+</body>
 </html>

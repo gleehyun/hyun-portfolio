@@ -6,9 +6,9 @@ async function init() {
   const godivaJsons = await response.json();
   display(godivaJsons);
 }
-// header=============================================
-//navLeft========================
 function display(godivaJsons) {
+  // header=============================================
+  //navLeft========================
   const navsLeft = document.querySelector("#nav_left");
   let navsLeftEl = "";
   godivaJsons.navs_Left.forEach((godivaJson) => {

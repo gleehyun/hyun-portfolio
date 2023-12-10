@@ -32,7 +32,7 @@ body {
 }
 
 $color: (
-  ribon: #cfb56a,
+  ribbon: #cfb56a,
   darkchoco: #29120a,
   whchoco: #f7e1aa,
   white01: #fff,
@@ -110,9 +110,8 @@ header {
         font-weight: 500;
         color: map-get($color, white01);
         transition: 0.3s;
-
         &:hover {
-          color: map-get($color, ribon);
+          color: map-get($color, ribbon);
         }
       }
     }
@@ -123,7 +122,7 @@ header {
     text-align: center;
     line-height: 2;
     font-size: 16px;
-    background: map-get($color, ribon);
+    background: map-get($color, ribbon);
   }
 }
 
@@ -142,11 +141,11 @@ header {
       left: 0;
       display: flex;
       flex-direction: row;
-      width: 300%;
+      width: 300vw;
       height: 100%;
       .slide {
         position: relative;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -155,7 +154,7 @@ header {
         &::before {
           content: "";
           position: absolute;
-          width: 100%;
+          width: 100vw;
           height: 100%;
           top: 0;
           left: 0;
@@ -226,7 +225,7 @@ header {
   height: 1600px;
   background: map-get($color, back1);
   .line {
-    border-top: 1.5px solid map-get($color, ribon);
+    border-top: 1.5px solid map-get($color, ribbon);
     width: 100%;
     margin: 50px;
   }
@@ -358,7 +357,7 @@ header {
 .gold_ribbon {
   width: 100%;
   height: 30px;
-  background: map-get($color, ribon);
+  background: map-get($color, ribbon);
 }
 #section3 {
   display: flex;
@@ -430,7 +429,7 @@ header {
   }
   .section3_text {
     text-align: center;
-    color: map-get($color, ribon);
+    color: map-get($color, ribbon);
     margin-top: 20px;
   }
 }
@@ -450,7 +449,7 @@ footer {
     flex-direction: row;
     .footer_top_content {
       width: 100%;
-      color: map-get($color, ribon);
+      color: map-get($color, ribbon);
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -464,7 +463,7 @@ footer {
           margin-bottom: 10px;
           transition: 0.3s;
           &:hover {
-            color: map-get($color, ribon);
+            color: map-get($color, ribbon);
           }
         }
       }
@@ -482,7 +481,7 @@ footer {
         form {
           select{
             background: #3B1A0F;
-            color: map-get($color, ribon);
+            color: map-get($color, ribbon);
             border: none;
             border-radius: 2px;
             margin-bottom: 10px;
@@ -510,7 +509,7 @@ footer {
           border-radius: 2px;
           padding: 5px;
           color: map-get($color, darkchoco);
-          background:map-get($color, ribon);
+          background:map-get($color, ribbon);
           &:hover{
             background: #a59155;
           }
@@ -519,14 +518,14 @@ footer {
     }
   }
   .line {
-    border-top: 1.5px solid map-get($color, ribon);
+    border-top: 1.5px solid map-get($color, ribbon);
     width: 100%;
     margin-top: 10px;
   }
   p {
     width: 95%;
     margin-top: 7px;
-    color: map-get($color, ribon);
+    color: map-get($color, ribbon);
     font-weight: 200;
     font-size: 12px;
     text-align: center;

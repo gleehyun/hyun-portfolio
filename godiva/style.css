@@ -69,10 +69,6 @@ header .nav_wrap .nav1 #nav_right li a {
   color: #fff;
   transition: 0.3s;
 }
-header .nav_wrap .nav1 #nav_left li a:hover,
-header .nav_wrap .nav1 #nav_right li a:hover {
-  color: #cfb56a;
-}
 header .nav_wrap .nav1 #nav_right li {
   margin-left: 20px;
 }
@@ -80,8 +76,7 @@ header .nav_wrap img {
   margin-top: -30px;
   width: 155px;
   height: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
 }
 header #nav_main {
@@ -126,23 +121,22 @@ header .gold_ribbon {
   left: 0;
   display: flex;
   flex-direction: row;
-  width: 300%;
+  width: 300vw;
   height: 100%;
 }
 #section1 .sliderwrap .slides .slide {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #section1 .sliderwrap .slides .slide::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   top: 0;
   left: 0;
@@ -238,8 +232,7 @@ header .gold_ribbon {
   margin: 20px;
   height: 550px;
   width: 453px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s;
 }
 #section2 .section2_items .section2_items_top ul a:nth-of-type(1) {
@@ -294,8 +287,7 @@ header .gold_ribbon {
   margin: 20px;
   width: 700px;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #section2 .section2_items_bottom ul a:nth-of-type(1) {
   background: url(./GODIVA_img/GODIVA_section2/section2_4.png);
@@ -344,8 +336,7 @@ header .gold_ribbon {
   margin-bottom: 10px;
   width: 140px;
   height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s;
 }
 #section3 img:hover {
@@ -373,8 +364,7 @@ header .gold_ribbon {
   margin-top: 30px;
   width: 300px;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #section3 .instagram_ad ul li {
   color: #0c0c0c;
@@ -470,9 +460,6 @@ footer .footer_top .footer_top_content:nth-child(4) input[type=email] {
   padding: 5px;
   outline: none;
   caret-color: auto;
-}
-footer .footer_top .footer_top_content:nth-child(4) input[type=email]::-moz-placeholder {
-  color: #29120a;
 }
 footer .footer_top .footer_top_content:nth-child(4) input[type=email]::placeholder {
   color: #29120a;

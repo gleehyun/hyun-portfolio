@@ -17,32 +17,38 @@
               <input class="enter" type="submit" value="입력" />
             </form>
           </div>
-          <ul>
+          <ul id="daily_todo">
             <li>
-              <span class="pointer"></span>
-              오늘 뭐하지?
+              <div class="list today_todo">
+                <span class="pointer"></span>
+                <p>오늘 반드시 해야하는 일!</p>
+                <button class="del">del</button>
+              </div>
+              <hr>
             </li>
-            <li><span class="pointer"></span>오늘 뭐하지?</li>
           </ul>
         </div>
-        <div class="daily_list">
+        <div class="daily routine">
           <div class="enter_wrap">
             <form>
-              <input class="todo" type="text" placeholder="데일리 루틴" />
-              <input class="enter" type="submit" value="입력" />
+              <input id="todo_routine" class="todo" type="text" placeholder="데일리 루틴" />
+              <input id="enter_routine" class="enter" type="submit" value="입력" />
             </form>
           </div>
           <ul>
             <li>
-              <span class="pointer"></span>
-              오늘 뭐할꺼
+              <div class="list routine">
+                <span class="pointer"></span>
+                <p>나는 이것을 매일 할꺼야!</p>
+                <button class="del">del</button>
+              </div>
+              <hr>
             </li>
-            <li><span class="pointer"></span>오늘 뭐할꺼?</li>
           </ul>
         </div>
         <div class="notes">
+          <p>참고사항</p>
           <textarea name="note" id="note" cols="30" rows="10">
-            참고사항
           </textarea>
         </div>
       </section>

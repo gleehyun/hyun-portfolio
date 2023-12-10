@@ -37,7 +37,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 120px;
   background: black;
   z-index: 999;
@@ -46,7 +46,9 @@ header {
   justify-content: center;
 }
 header .header_inner {
+  position: relative;
   width: 1600px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,17 +72,52 @@ header .header_inner .toggle span:nth-child(3) {
   margin-top: 50%;
 }
 header .header_inner h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 36px;
 }
-header .header_inner .search input {
+header .header_inner .search_box {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  width: 175px;
+}
+header .header_inner .search_box .search {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header_inner .search_box .search input {
+  position: absolute;
+  bottom: 2px;
   background: none;
   border: none;
-  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  width: 140px;
 }
-header .header_inner .search img {
+header .header_inner .search_box .search input:focus {
+  border-color: #fff;
+  outline: none;
+}
+header .header_inner .search_box .search input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+header .header_inner .search_box .search img {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
   width: 33px;
-  height: 44.46;
+  height: 44.46px;
+}
+header .header_inner .search_box hr {
+  width: 175px;
 }
 
 #sec1 {
@@ -175,6 +212,8 @@ header .header_inner .search img {
 }
 #sec2 #sec2_inner #sec2_inner_artist #sec2_artist_pic img {
   border: 1px solid #000;
+  width: 497px;
+  height: 497px;
 }
 #sec2 #sec2_inner #sec2_inner_artist #sec2_artist_text {
   width: 897px;
@@ -300,22 +339,22 @@ header .header_inner .search img {
   font-size: 34px;
   font-weight: 500;
 }
-#sec4 #sec4_inner .our_survice {
+#sec4 #sec4_inner .our_service {
   margin-bottom: 113px;
   width: 100%;
 }
-#sec4 #sec4_inner .our_survice h3 {
+#sec4 #sec4_inner .our_service h3 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 36px;
 }
-#sec4 #sec4_inner .our_survice .survice_contents {
+#sec4 #sec4_inner .our_service .service_contents {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-#sec4 #sec4_inner .our_survice .survice_contents .our_survice_content_frame {
+#sec4 #sec4_inner .our_service .service_contents .our_service_content_frame {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,7 +364,7 @@ header .header_inner .search img {
   border: 2px solid #000;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
-#sec4 #sec4_inner .our_survice .survice_contents .our_survice_content_frame .survice_content {
+#sec4 #sec4_inner .our_service .service_contents .our_service_content_frame .service_content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -337,14 +376,14 @@ header .header_inner .search img {
   background: #fff;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25) inset;
 }
-#sec4 #sec4_inner .our_survice .survice_contents .our_survice_content_frame .survice_content p {
+#sec4 #sec4_inner .our_service .service_contents .our_service_content_frame .service_content li:nth-child(1) {
   color: #000;
   text-align: center;
   font-family: Noto Sans;
   font-size: 30px;
   font-weight: 500;
 }
-#sec4 #sec4_inner .our_survice .survice_contents .our_survice_content_frame .survice_content a {
+#sec4 #sec4_inner .our_service .service_contents .our_service_content_frame .service_content a {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -359,11 +398,11 @@ header .header_inner .search img {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   transition: 0.2s;
 }
-#sec4 #sec4_inner .our_survice .survice_contents .our_survice_content_frame .survice_content a:hover {
+#sec4 #sec4_inner .our_service .service_contents .our_service_content_frame .service_content a:hover {
   scale: 1.05;
   background: #f2f2f2;
 }
-#sec4 #sec4_inner .our_survice .survice_contents .our_survice_content_frame .survice_content a img {
+#sec4 #sec4_inner .our_service .service_contents .our_service_content_frame .service_content a img {
   width: 20px;
   height: 20px;
 }
