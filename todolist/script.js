@@ -12,7 +12,6 @@ const frames = document.querySelectorAll(".frames iframe");
 
 buttons.forEach((button, index) => {
   button.addEventListener("click", () => {
-
     frames.forEach((frame, frameIndex) => {
       if (index === frameIndex) {
         frame.style.display = "block";

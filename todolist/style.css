@@ -27,7 +27,6 @@ body .wrap {
   align-items: center;
   height: 844px;
   width: 390px;
-  background: sandybrown;
 }
 
 .nav {
@@ -110,6 +109,7 @@ body .wrap {
   width: 100%;
 }
 .contents .frames iframe {
+  display: none;
   width: inherit;
   height: inherit;
 }/*# sourceMappingURL=style.css.map */

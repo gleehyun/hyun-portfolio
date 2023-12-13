@@ -43,7 +43,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: map-get($color, listblue);
+    background: map-get($color, listlemon);
   }
 }
 
@@ -57,58 +57,45 @@ body {
   height: 90%;
   background: white;
   .enter_wrap {
-    .enter_wrap_todo {
-      margin: 30px 0 10px 0;
-      width: 256px;
-      height: 46px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    margin: 30px 0 10px 0;
+    width: 256px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: map-get($color, listlemon);
+    form {
       border-radius: 5px;
-      background: map-get($color, listblue);
-      form {
-        border-radius: 5px;
-        height: 30px;
-        width: 240px;
-        background: white;
-        display: flex;
-        align-items: center;
-        padding: 3px;
-        .todo {
-          width: 190px;
-          height: 20px;
-          border: none;
-          outline: none;
-          ::placeholder {
-            color: map-get($color, maingray);
-            font-size: 16px;
-            font-family: Sora;
-          }
+      height: 30px;
+      width: 240px;
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 3px;
+      .todo {
+        width: 190px;
+        height: 20px;
+        border: none;
+        outline: none;
+        ::placeholder {
+          color: map-get($color, maingray);
+          font-size: 16px;
+          font-family: Sora;
         }
       }
-      &:nth-child(2) {
-        input[type="date"]::before {
-          content: attr(data-placeholder);
-          width: 100%;
+      .enter {
+        border: none;
+        background: map-get($color, listlemon);
+        color: map-get($color, maingray);
+        width: 43px;
+        height: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        &:hover {
+          background: none;
+          border: 1px solid map-get($color, listlemon);
         }
-        input[type="date"]:focus::before,
-        input[type="date"]:valid::before {
-          display: none;
-        }
-      }
-    }
-
-    .enter {
-      border: none;
-      background: map-get($color, listblue);
-      color: map-get($color, maingray);
-      width: 43px;
-      height: 20px;
-      border-radius: 10px;
-      transition: 0.3s;
-      &:hover {
-        background: none;
-        border: 1px solid map-get($color, listblue);
       }
     }
   }
@@ -125,7 +112,7 @@ body {
           width: 15px;
           height: 15px;
           border-radius: 50%;
-          background: map-get($color, listblue);
+          background: map-get($color, listlemon);
           &.important {
             width: 15px;
             height: 15px;
@@ -157,18 +144,18 @@ body {
           height: 20px;
           border-radius: 10px;
           border: none;
-          background: map-get($color, listblue);
+          background: map-get($color, listlemon);
           cursor: pointer;
           transition: 0.3s;
           &:hover {
             background: none;
-            border: 1px solid map-get($color, listblue);
+            border: 1px solid map-get($color, listlemon);
           }
         }
       }
       hr {
         margin-top: 2px;
-        border: 1px solid map-get($color, listblue);
+        border: 1px solid map-get($color, listlemon);
       }
     }
   }
@@ -177,7 +164,7 @@ body {
     bottom: 20px;
     height: 120px;
     width: 90%;
-    background: #ecfef8;
+    background: #fffdef;
     color: map-get($color, maingray);
     font-family: Sora;
     font-size: 16px;

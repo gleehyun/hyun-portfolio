@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="Ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="contents">
+        <div class="today_list">
+          <div class="enter_wrap">
+            <form>
+              <input class="todo" type="text" placeholder="이번주의 할일" />
+              <input class="enter" type="submit" value="입력" />
+            </form>
+          </div>
+          <ul id="daily_todo">
+            <li>
+              <div class="list today_todo">
+                <span class="pointer"></span>
+                <p>오늘 반드시 해야하는 일!</p>
+                <button class="del">del</button>
+              </div>
+              <hr />
+            </li>
+          </ul>
+        </div>
+
+        <div class="notes">
+          <p>참고사항</p>
+          <textarea name="note" id="note" cols="30" rows="10"> </textarea>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>

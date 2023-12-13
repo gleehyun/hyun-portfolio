@@ -32,7 +32,6 @@ body {
     align-items: center;
     height: 844px;
     width: 390px;
-    background: sandybrown;
   }
 }
 
@@ -113,18 +112,19 @@ $color: (
       &:nth-child(3) {
         background: map-get($color, listblue);
       }
-      &:hover{
+      &:hover {
         color: #555;
       }
-      &.active{
+      &.active {
         color: #555;
       }
     }
   }
-  .frames{
+  .frames {
     height: 779px;
     width: 100%;
     iframe {
+      display: none;
       width: inherit;
       height: inherit;
     }

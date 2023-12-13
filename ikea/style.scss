@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
+
 // reset css
 * {
   margin: 0;
@@ -16,5 +18,66 @@ a {
 
 // common css
 body {
+  width: 100vw;
   height: 6701px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+// header css
+header {
+  width: 100%;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .header_top {
+    height: 50px;
+    width: inherit;
+    background: #222;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 34.5px;
+    }
+  }
+  .header_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 1529px;
+    .haeder_search_wrap {
+      display: flex;
+      align-items: center;
+      width: 947.62px;
+      height: 70px;
+      border-radius: 50px;
+      background: #efefef;
+      box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1) inset;
+      img {
+        width: 23.879px;
+        height: 25px;
+        margin-left: 25px;
+      }
+      input {
+        background: none;
+        border: none;
+        outline: none;
+        margin-left: 23px;
+        width: 850px;
+        color: #222;
+        font-size: 20px;
+      }
+    }
+    .header_personal {
+      display: flex;
+      width: 367.24;
+    }
+  }
 }

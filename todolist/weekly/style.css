@@ -27,7 +27,7 @@ body .wrap {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: #bef9e7;
+  background: #fff8b6;
 }
 
 .contents {
@@ -39,7 +39,7 @@ body .wrap {
   height: 90%;
   background: white;
 }
-.contents .enter_wrap .enter_wrap_todo {
+.contents .enter_wrap {
   margin: 30px 0 10px 0;
   width: 256px;
   height: 46px;
@@ -47,9 +47,9 @@ body .wrap {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background: #bef9e7;
+  background: #fff8b6;
 }
-.contents .enter_wrap .enter_wrap_todo form {
+.contents .enter_wrap form {
   border-radius: 5px;
   height: 30px;
   width: 240px;
@@ -58,42 +58,34 @@ body .wrap {
   align-items: center;
   padding: 3px;
 }
-.contents .enter_wrap .enter_wrap_todo form .todo {
+.contents .enter_wrap form .todo {
   width: 190px;
   height: 20px;
   border: none;
   outline: none;
 }
-.contents .enter_wrap .enter_wrap_todo form .todo ::-moz-placeholder {
+.contents .enter_wrap form .todo ::-moz-placeholder {
   color: #a5a5a5;
   font-size: 16px;
   font-family: Sora;
 }
-.contents .enter_wrap .enter_wrap_todo form .todo ::placeholder {
+.contents .enter_wrap form .todo ::placeholder {
   color: #a5a5a5;
   font-size: 16px;
   font-family: Sora;
 }
-.contents .enter_wrap .enter_wrap_todo:nth-child(2) input[type=date]::before {
-  content: attr(data-placeholder);
-  width: 100%;
-}
-.contents .enter_wrap .enter_wrap_todo:nth-child(2) input[type=date]:focus::before,
-.contents .enter_wrap .enter_wrap_todo:nth-child(2) input[type=date]:valid::before {
-  display: none;
-}
-.contents .enter_wrap .enter {
+.contents .enter_wrap form .enter {
   border: none;
-  background: #bef9e7;
+  background: #fff8b6;
   color: #a5a5a5;
   width: 43px;
   height: 20px;
   border-radius: 10px;
   transition: 0.3s;
 }
-.contents .enter_wrap .enter:hover {
+.contents .enter_wrap form .enter:hover {
   background: none;
-  border: 1px solid #bef9e7;
+  border: 1px solid #fff8b6;
 }
 .contents ul li .list {
   position: relative;
@@ -107,7 +99,7 @@ body .wrap {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #bef9e7;
+  background: #fff8b6;
 }
 .contents ul li .list span.important {
   width: 15px;
@@ -139,24 +131,24 @@ body .wrap {
   height: 20px;
   border-radius: 10px;
   border: none;
-  background: #bef9e7;
+  background: #fff8b6;
   cursor: pointer;
   transition: 0.3s;
 }
 .contents ul li .list button:hover {
   background: none;
-  border: 1px solid #bef9e7;
+  border: 1px solid #fff8b6;
 }
 .contents ul li hr {
   margin-top: 2px;
-  border: 1px solid #bef9e7;
+  border: 1px solid #fff8b6;
 }
 .contents .notes {
   position: absolute;
   bottom: 20px;
   height: 120px;
   width: 90%;
-  background: #ecfef8;
+  background: #fffdef;
   color: #a5a5a5;
   font-family: Sora;
   font-size: 16px;

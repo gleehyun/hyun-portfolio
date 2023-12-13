@@ -116,10 +116,20 @@ nav {
         }
       }
       .sec1_picture_box {
+        position: relative;
         background: url(./portfolio_img/main_back.png) center center/cover
           no-repeat;
         width: 594px;
         height: 531px;
+        img {
+          position: absolute;
+          bottom: -87px;
+          left: 49%;
+          transform: translateX(-50%);
+          width: 500px;
+          height: 700px;
+          object-fit: cover;
+        }
       }
     }
     .sec1_scroll_box {
