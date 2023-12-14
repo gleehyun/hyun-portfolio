@@ -1,0 +1,54 @@
+{
+  "bestCategory": [
+    {
+      "bestImg": "./Ikeaimg/sec1_best/image1.png",
+      "bestAlt": "best1",
+      "bestText": "신제품"
+    },
+    {
+      "bestImg": "./Ikeaimg/sec1_best/image2.png",
+      "bestAlt": "best2",
+      "bestText": "수납/정리"
+    },
+    {
+      "bestImg": "./Ikeaimg/sec1_best/image3.png",
+      "bestAlt": "best3",
+      "bestText": "홈액세서리"
+    },
+    {
+      "bestImg": "./Ikeaimg/sec1_best/image4.png",
+      "bestAlt": "best4",
+      "bestText": "테이블/식탁/책상"
+    },
+    {
+      "bestImg": "./Ikeaimg/sec1_best/image5.png",
+      "bestAlt": "best5",
+      "bestText": "소파"
+    },
+    {
+      "bestImg": "./Ikeaimg/sec1_best/image6.png",
+      "bestAlt": "best6",
+      "bestText": "옷장"
+    },
+    {
+      "bestImg": "./Ikeaimg/sec1_best/image7.png",
+      "bestAlt": "best7",
+      "bestText": "조명"
+    },
+    {
+      "bestImg": "./Ikeaimg/sec1_best/image8.png",
+      "bestAlt": "best8",
+      "bestText": "어린이IKEA"
+    },
+    {
+      "bestImg": "./Ikeaimg/sec1_best/image9.png",
+      "bestAlt": "best9",
+      "bestText": "침대/매트리스"
+    },
+    {
+      "bestImg": "./Ikeaimg/sec1_best/image10.png",
+      "bestAlt": "best10",
+      "bestText": "주방용품"
+    }
+  ]
+}
