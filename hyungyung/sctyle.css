@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +16,9 @@ a {
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #fff8ef;
   font-family: Noto-sans;
 }
@@ -25,11 +27,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 nav {
+  position: fixed;
   margin-top: 44px;
   width: 1489px;
+  z-index: 999;
 }
 nav ul {
   width: 100%;
@@ -60,7 +66,11 @@ nav ul li:nth-child(5) {
   align-items: center;
 }
 
+#sec1 {
+  z-index: -1;
+}
 #sec1 .inner {
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -71,6 +81,7 @@ nav ul li:nth-child(5) {
 #sec1 .inner .sec1_info {
   width: 1489px;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
 }
 #sec1 .inner .sec1_info .sec1_text_box {
@@ -122,6 +133,8 @@ nav ul li:nth-child(5) {
      object-fit: cover;
 }
 #sec1 .inner .sec1_scroll_box {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,9 +168,31 @@ nav ul li:nth-child(5) {
   width: 10px;
   height: 10px;
   background: #fff;
+  position: relative;
+  animation: moveDown 2s ease infinite;
+}
+@keyframes moveDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(23px);
+  }
 }
 #sec1 .inner .sec1_scroll_box .sec1_scroll_box_text {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
+}
+
+.sec2 .inner {
+  animation: moveCross 2s ease infinite;
+}
+@keyframes moveCross {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
 }/*# sourceMappingURL=sctyle.css.map */
