@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: #fff8ef;
-  font-family: Noto-sans;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .section {
@@ -34,7 +34,7 @@ body {
 nav {
   position: fixed;
   margin-top: 44px;
-  width: 1489px;
+  width: 70%;
   z-index: 999;
 }
 nav ul {
@@ -48,8 +48,8 @@ nav ul li a {
   transition: 0.3s;
 }
 nav ul li a img {
-  width: 125px;
-  height: 70px;
+  width: 100%;
+  height: 100%;
 }
 nav ul li a:hover {
   color: #ff6726;
@@ -185,14 +185,35 @@ nav ul li:nth-child(5) {
   font-weight: 400;
 }
 
-.sec2 .inner {
-  animation: moveCross 2s ease infinite;
+#sec2 .inner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+#sec2 .inner .line {
+  position: absolute;
+  top: 160px;
+  width: 600px;
+  height: 2px;
+  background: #ff6726;
+  display: inline-block;
+}
+#sec2 .inner p {
+  animation: moveCross 10s linear infinite;
+  font-family: "Palette Mosaic", sans-serif;
+  font-size: 128px;
+  letter-spacing: -20.48px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  color: rgba(255, 103, 38, 0.2);
 }
 @keyframes moveCross {
-  0%, 100% {
-    transform: translateX(0);
+  0% {
+    transform: translateX(100%);
   }
-  50% {
-    transform: translateX(100px);
+  100% {
+    transform: translateX(-100%);
   }
 }/*# sourceMappingURL=sctyle.css.map */

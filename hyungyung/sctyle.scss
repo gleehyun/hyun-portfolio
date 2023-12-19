@@ -26,7 +26,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: map-get($color, back);
-  font-family: Noto-sans;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .section {
@@ -41,7 +41,7 @@ body {
 nav {
   position: fixed;
   margin-top: 44px;
-  width: 1489px;
+  width: 70%;
   z-index: 999;
   ul {
     width: 100%;
@@ -53,8 +53,8 @@ nav {
         color: #000;
         transition: 0.3s;
         img {
-          width: 125px;
-          height: 70px;
+          width: 100%;
+          height: 100%;
         }
         &:hover {
           color: map-get($color, main);
@@ -198,16 +198,37 @@ nav {
 }
 
 // section2 css
-.sec2 {
+
+#sec2 {
   .inner {
-    animation: moveCross 2s ease infinite;
-    @keyframes moveCross {
-      0%,
-      100% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(100px);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    .line {
+      position: absolute;
+      top: 160px;
+      width: 600px;
+      height: 2px;
+      background: #ff6726;
+      display: inline-block;
+    }
+    p {
+      animation: moveCross 10s linear infinite;
+      font-family: "Palette Mosaic", sans-serif;
+      font-size: 128px;
+      letter-spacing: -20.48px;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      color: rgba(255, 103, 38, 0.2);
+      @keyframes moveCross {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
       }
     }
   }
