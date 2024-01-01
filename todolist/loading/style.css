@@ -201,9 +201,6 @@ body {
   margin-left: 5px;
   font-size: 16px;
 }
-.login_page #login_box form p input::-moz-placeholder {
-  color: #a5a5a5;
-}
 .login_page #login_box form p input::placeholder {
   color: #a5a5a5;
 }

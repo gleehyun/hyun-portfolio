@@ -98,15 +98,22 @@ const routineHandler = (e) => {
 };
 
 const saveNote = () => {
-  noteContent = noteTextarea.value;
-  document.cookie = `note=${encodeURIComponent(noteContent)}; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/`;
+  const noteContent = noteTextarea.value;
+  document.cookie = `note=${encodeURIComponent(noteContent)}; path=/`;
 };
 
 const loadNote = () => {
-  const cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)note\s*=\s*([^;]*).*$)|^.*$/, "$1");
-  noteTextarea.value = decodeURIComponent(cookieValue);
-};
+  const cookies = document.cookie.split(';');
 
+  for (const cookie of cookies) {
+    const [name, value] = cookie.trim().split('=');
+
+    if (name === 'note') {
+      noteTextarea.value = decodeURIComponent(value);
+      break;
+    }
+  }
+};
 const init = () => {
   const userTodos = JSON.parse(localStorage.getItem("todos")) || [];
   const userDailyTodos = JSON.parse(localStorage.getItem("dailyTodos")) || [];

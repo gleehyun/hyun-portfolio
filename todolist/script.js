@@ -23,8 +23,10 @@ buttons.forEach((button, index) => {
     buttons.forEach((btn, btnIndex) => {
       if (index === btnIndex) {
         btn.classList.add("active");
+        frames[btnIndex].style.display = "block";
       } else {
         btn.classList.remove("active");
+        frames[btnIndex].style.display = "none";
       }
     });
   });

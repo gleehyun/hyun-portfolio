@@ -127,6 +127,9 @@ $color: (
       display: none;
       width: inherit;
       height: inherit;
+      &.active{
+        display: block;
+      }
     }
   }
 }

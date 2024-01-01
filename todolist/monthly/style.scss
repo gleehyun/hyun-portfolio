@@ -57,6 +57,11 @@ body {
   height: 90%;
   background: white;
   .enter_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
     .enter_wrap_todo {
       margin: 30px 0 10px 0;
       width: 256px;
@@ -66,6 +71,9 @@ body {
       align-items: center;
       border-radius: 5px;
       background: map-get($color, listblue);
+      &:nth-child(2){
+        margin: 0 0 20px 0 ;
+      }
       form {
         border-radius: 5px;
         height: 30px;
@@ -87,10 +95,13 @@ body {
         }
       }
       &:nth-child(2) {
+        
         input[type="date"]::before {
           content: attr(data-placeholder);
           width: 100%;
-        }
+          color:  map-get($color, darkgray);
+          font-family: Sora;
+        }      
         input[type="date"]:focus::before,
         input[type="date"]:valid::before {
           display: none;
@@ -102,9 +113,9 @@ body {
       border: none;
       background: map-get($color, listblue);
       color: map-get($color, maingray);
-      width: 43px;
-      height: 20px;
-      border-radius: 10px;
+      width: 50px;
+      height: 30px;
+      border-radius: 20px;
       transition: 0.3s;
       &:hover {
         background: none;
@@ -141,6 +152,9 @@ body {
           font-family: Roboto;
           font-size: 16px;
           letter-spacing: -0.56px;
+          &:nth-child(3){
+            left: 180px;
+          }
           &.finish {
             color: rgba(34, 34, 34, 0.33);
             font-family: Roboto;

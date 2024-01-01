@@ -39,6 +39,13 @@ body .wrap {
   height: 90%;
   background: white;
 }
+.contents .enter_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 .contents .enter_wrap .enter_wrap_todo {
   margin: 30px 0 10px 0;
   width: 256px;
@@ -48,6 +55,9 @@ body .wrap {
   align-items: center;
   border-radius: 5px;
   background: #bef9e7;
+}
+.contents .enter_wrap .enter_wrap_todo:nth-child(2) {
+  margin: 0 0 20px 0;
 }
 .contents .enter_wrap .enter_wrap_todo form {
   border-radius: 5px;
@@ -64,11 +74,6 @@ body .wrap {
   border: none;
   outline: none;
 }
-.contents .enter_wrap .enter_wrap_todo form .todo ::-moz-placeholder {
-  color: #a5a5a5;
-  font-size: 16px;
-  font-family: Sora;
-}
 .contents .enter_wrap .enter_wrap_todo form .todo ::placeholder {
   color: #a5a5a5;
   font-size: 16px;
@@ -77,6 +82,8 @@ body .wrap {
 .contents .enter_wrap .enter_wrap_todo:nth-child(2) input[type=date]::before {
   content: attr(data-placeholder);
   width: 100%;
+  color: #6f6f6f;
+  font-family: Sora;
 }
 .contents .enter_wrap .enter_wrap_todo:nth-child(2) input[type=date]:focus::before,
 .contents .enter_wrap .enter_wrap_todo:nth-child(2) input[type=date]:valid::before {
@@ -86,9 +93,9 @@ body .wrap {
   border: none;
   background: #bef9e7;
   color: #a5a5a5;
-  width: 43px;
-  height: 20px;
-  border-radius: 10px;
+  width: 50px;
+  height: 30px;
+  border-radius: 20px;
   transition: 0.3s;
 }
 .contents .enter_wrap .enter:hover {
@@ -123,6 +130,9 @@ body .wrap {
   font-family: Roboto;
   font-size: 16px;
   letter-spacing: -0.56px;
+}
+.contents ul li .list p:nth-child(3) {
+  left: 180px;
 }
 .contents ul li .list p.finish {
   color: rgba(34, 34, 34, 0.33);

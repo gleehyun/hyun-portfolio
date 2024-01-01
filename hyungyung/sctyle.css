@@ -113,8 +113,7 @@ nav ul li:nth-child(5) {
   font-size: 33px;
 }
 #sec1 .inner .sec1_info .sec1_text_box .sec1_text_box_moreinfo button span {
-  -webkit-text-decoration: 1px solid underline;
-          text-decoration: 1px solid underline;
+  text-decoration: 1px solid underline;
 }
 #sec1 .inner .sec1_info .sec1_picture_box {
   position: relative;
@@ -129,8 +128,7 @@ nav ul li:nth-child(5) {
   transform: translateX(-50%);
   width: 500px;
   height: 700px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #sec1 .inner .sec1_scroll_box {
   position: absolute;

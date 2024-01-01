@@ -76,8 +76,7 @@ header .nav_wrap img {
   margin-top: -30px;
   width: 155px;
   height: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
 }
 header #nav_main {
@@ -132,8 +131,7 @@ header .gold_ribbon {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #section1 .sliderwrap .slides .slide::before {
   content: "";
@@ -234,8 +232,7 @@ header .gold_ribbon {
   margin: 20px;
   height: 550px;
   width: 453px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s;
 }
 #section2 .section2_items .section2_items_top ul a:nth-of-type(1) {
@@ -290,8 +287,7 @@ header .gold_ribbon {
   margin: 20px;
   width: 700px;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #section2 .section2_items_bottom ul a:nth-of-type(1) {
   background: url(./GODIVA_img/GODIVA_section2/section2_4.png);
@@ -340,8 +336,7 @@ header .gold_ribbon {
   margin-bottom: 10px;
   width: 140px;
   height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s;
 }
 #section3 img:hover {
@@ -369,8 +364,7 @@ header .gold_ribbon {
   margin-top: 30px;
   width: 300px;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #section3 .instagram_ad ul li {
   color: #0c0c0c;
@@ -466,9 +460,6 @@ footer .footer_top .footer_top_content:nth-child(4) input[type=email] {
   padding: 5px;
   outline: none;
   caret-color: auto;
-}
-footer .footer_top .footer_top_content:nth-child(4) input[type=email]::-moz-placeholder {
-  color: #29120a;
 }
 footer .footer_top .footer_top_content:nth-child(4) input[type=email]::placeholder {
   color: #29120a;

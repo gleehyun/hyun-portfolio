@@ -155,8 +155,7 @@ header .header_bottom .header_personal img {
 }
 #sec1 .banner img {
   width: 987px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #sec1 .banner .banner_cotents {
   position: relative;

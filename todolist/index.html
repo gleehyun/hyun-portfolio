@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TodoIt</title>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
   </head>
@@ -19,20 +19,20 @@
       </div>
       <div class="contents">
         <div class="buttons">
-          <button id="daily" class="plan">daily</button>
+          <button id="daily" class="plan active">daily</button>
           <button id="weekly" class="plan">weekly</button>
           <button id="monthly" class="plan">monthly</button>
         </div>
         <div class="frames">
           <iframe
-            class="ative"
+          class="active"
             id="daily_frame"
             src="./daily/index.html"
             frameborder=""
           ></iframe>
-          <iframe id="weekly" src="./weekly/index.html" frameborder=""></iframe>
+          <iframe id="weekly_frame" src="./weekly/index.html" frameborder=""></iframe>
           <iframe
-            id="monthly"
+            id="monthly_frame"
             src="./monthly/index.html"
             frameborder=""
           ></iframe>

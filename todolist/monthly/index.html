@@ -6,6 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
+    <script>
+      function StartDateValueHandler() {
+        // 원하는 동작을 수행하는 코드를 여기에 작성
+        console.log("날짜가 변경되었습니다!");
+      }
+    </script>
   </head>
   <body>
     <div class="wrap">
@@ -13,21 +19,20 @@
         <div class="today_list">
           <div class="enter_wrap">
             <div class="enter_wrap_todo">
-              <form>
+              <form id="todoForm">
                 <input class="todo" type="text" placeholder="이달의 할 일" />
               </form>
             </div>
             <div class="enter_wrap_todo">
               <form>
                 <input
-                  class="todo"
+                  class="todo selectDay"
                   type="date"
                   data-placeholder="마감날짜"
                   required
                   aria-required="true"
                   value="{startDateValue}"
-                  className="{styles.selectDay}"
-                  onChange="{StartDateValueHandler}"
+                  onchange="StartDateValueHandler()"
                 />
               </form>
             </div>
@@ -37,7 +42,8 @@
             <li>
               <div class="list today_todo">
                 <span class="pointer"></span>
-                <p>오늘 반드시 해야하는 일!</p>
+                <p>반드시 해야하는 일!</p>
+                <p>12. 5</p>
                 <button class="del">del</button>
               </div>
               <hr />

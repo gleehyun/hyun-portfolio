@@ -112,4 +112,7 @@ body .wrap {
   display: none;
   width: inherit;
   height: inherit;
+}
+.contents .frames iframe.active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

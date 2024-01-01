@@ -64,11 +64,6 @@ body .wrap {
   border: none;
   outline: none;
 }
-.contents .enter_wrap form .todo ::-moz-placeholder {
-  color: #a5a5a5;
-  font-size: 16px;
-  font-family: Sora;
-}
 .contents .enter_wrap form .todo ::placeholder {
   color: #a5a5a5;
   font-size: 16px;
