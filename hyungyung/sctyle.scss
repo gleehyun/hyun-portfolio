@@ -35,13 +35,14 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 // nav css
 nav {
   position: fixed;
   margin-top: 44px;
-  width: 70%;
+  width: 1489px;
   z-index: 999;
   ul {
     width: 100%;
@@ -49,23 +50,61 @@ nav {
     justify-content: space-between;
     align-items: center;
     li {
+      font-size: 20px;
       a {
         color: #000;
         transition: 0.3s;
-        img {
-          width: 100%;
-          height: 100%;
-        }
         &:hover {
           color: map-get($color, main);
         }
       }
+      &:nth-child(1) {
+        position: relative;
+        margin-right: 200px;
+        img {
+          width: 127px;
+          height: 71.22px;
+          z-index: 1;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: url(./portfolio_img/main_home.png) center center no-repeat;
+          background-size: contain;
+          z-index: -1;
+          opacity: 0;
+          transform: scale(0.8);
+          transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        &:hover {
+          &:before {
+            opacity: 1;
+            z-index: -1;
+            animation: scale 1s ease infinite;
+            @keyframes scale {
+              0% {
+                transform: scale(1.5);
+              }
+              50% {
+                transform: scale(1);
+              }
+              100% {
+                transform: scale(1.5);
+              }
+            }
+          }
+        }
+      }
       &:nth-child(5) {
         width: 195px;
-        height: 70px;
+        height: 60px;
         border: 1px solid map-get($color, text);
         border-radius: 50px;
-        font-size: 32px;
+        font-size: 28px;
         font-weight: 500;
         display: flex;
         justify-content: center;
@@ -77,7 +116,6 @@ nav {
 
 // section1 css
 #sec1 {
-  z-index: -1;
   .inner {
     position: relative;
     height: 100vh;
@@ -106,10 +144,11 @@ nav {
           color: #000;
           font-size: 30px;
           font-weight: 400;
-          line-height: 150.673%;
-          margin-bottom: 43px;
+          line-height: 151%;
+          margin-bottom: 35px;
         }
         .sec1_text_box_moreinfo {
+          position: relative;
           button {
             width: 250px;
             height: 70px;
@@ -120,6 +159,34 @@ nav {
             font-size: 33px;
             span {
               text-decoration: 1px solid underline;
+              transition: 0.3s;
+              &:hover{
+                color:map-get($color, main);
+              }
+            }
+          }
+          .sec1_text_box_moreinfo_contents{
+            background: #ff6726be;
+            width: 780px;
+            padding: 18px;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 30px;
+            position: absolute;
+            z-index: -1;
+            top: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            p{
+              h4{
+                font-size: 20px;
+              }
+              &:nth-child(1){
+                margin-top: 35px;
+              }
+            }
+            &.show {
+              opacity: 1;
             }
           }
         }
@@ -148,7 +215,7 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 100vw;
       height: 123px;
       background: map-get($color, main);
       .sec1_scroll_box_icon {
@@ -200,34 +267,105 @@ nav {
 // section2 css
 
 #sec2 {
-  .inner {
-    position: relative;
-    height: 100vh;
+  .sec2_skills{
+      position: relative;
     width: 100%;
-    overflow: hidden;
     .line {
       position: absolute;
-      top: 160px;
-      width: 600px;
+      top: -20px;
+      width: 23.1%;
       height: 2px;
       background: #ff6726;
-      display: inline-block;
     }
-    p {
-      animation: moveCross 10s linear infinite;
-      font-family: "Palette Mosaic", sans-serif;
-      font-size: 128px;
-      letter-spacing: -20.48px;
-      white-space: nowrap;
-      overflow: hidden;
-      display: inline-block;
-      color: rgba(255, 103, 38, 0.2);
-      @keyframes moveCross {
-        0% {
-          transform: translateX(100%);
+    ul{
+      position: absolute;
+      left: 10.5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: end;
+      li{
+        margin-right: 26px;
+        img{
+          width: 40px;
+          height: 40px;
         }
-        100% {
-          transform: translateX(-100%);
+      }
+    }
+  }
+  .inner {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .sec2_design_process{
+      position: relative;
+      width: 1489px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 70px;
+      ul{
+        &:last-child{
+          margin-right: 0;
+        }
+        h4{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 190px;
+          height: 40px;
+          border-radius: 50px;
+          background: map-get($color,main);
+          color: #fff;
+          font-size: 24px;
+          font-weight: 500;
+          margin-bottom: 15px;
+        }
+        li{
+          width: 200px;
+          text-align: center;
+          margin-bottom: 10px;
+          font-size: 18px;
+          color: map-get($color, text);
+        }
+      }
+    }
+    .sec2_design{
+      p{
+          font-size: 24px;
+          font-weight: 400;
+          margin-bottom: 30px;
+      }
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1489px;
+        li{
+          font-size: 15px;
+          font-weight: 400;
+          overflow: hidden;
+          width: 250px;
+          height: 300px;
+          border-radius: 10px;
+          filter:brightness(0.5);
+          transition: ease-in 0.3s;
+          img{
+            width: 100%;
+            height: auto;
+            transition: scale 0.3s ease-in-out, transform 2s ease-in-out;
+            &:hover{
+              transform: translateY(-50%);
+              scale: 1.05;
+            }
+          }
+          &:hover{
+            filter: none;
+          }
         }
       }
     }

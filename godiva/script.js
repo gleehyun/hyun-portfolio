@@ -84,7 +84,6 @@ function display(godivaJsons) {
         footerItems += `<li>${detail}</li>`;
       });
     } else if (typeof footerDetails === "string") {
-      // If footerDetail is a string
       footerItems += `<li>${footerDetails}</li>`;
     }
 

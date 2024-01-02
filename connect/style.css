@@ -237,6 +237,7 @@ header .header_inner .search_box hr {
   margin-bottom: 10px;
 }
 #sec2 #sec2_inner .sec2_artist_work {
+  cursor: pointer;
   width: 1600px;
   display: flex;
   justify-content: space-between;
