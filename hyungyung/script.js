@@ -18,6 +18,15 @@ new fullpage('#fullpage', {
                 aTag.style.color = "";
             }
         });
+
+        document.querySelectorAll('.section').forEach((section, index) => {
+          if (newSection.index === index) {
+            section.classList.add("active");
+          } else {
+            section.classList.remove("active");
+          }
+        });
+      
     }
 });
 
@@ -84,3 +93,50 @@ function display(hgJsons) {
 }
 
 init();
+
+
+const s_Slider = document.querySelectorAll('.sec3_slider li');
+const s_Icons = document.querySelectorAll('.slide_icons li');
+const s_Left = document.querySelector('.slide_btn.left');
+const s_Right = document.querySelector('.slide_btn.right');
+
+let currentIndex = 0;
+
+const s_reset = () => {
+  s_Slider.forEach((elem, idx) => {
+    s_Slider[idx].classList.remove('on');
+    s_Icons[idx].classList.remove('active');
+  });
+};
+
+s_Icons.forEach((li) => {
+  li.addEventListener('click', (e) => {
+    let target = e.target.dataset.index;
+    s_reset();
+    if (li.tagName === 'LI') {
+      currentIndex = target;
+      updateSlide();
+    }
+  });
+});
+
+const next = () => {
+  s_reset();
+  currentIndex = (currentIndex + 1) % s_Slider.length;
+  updateSlide();
+};
+
+s_Right.addEventListener('click', next);
+
+const prev = () => {
+  s_reset();
+  currentIndex = (currentIndex - 1 + s_Slider.length) % s_Slider.length;
+  updateSlide();
+};
+
+s_Left.addEventListener('click', prev);
+
+const updateSlide = () => {
+  s_Slider[currentIndex].classList.add('on');
+  s_Icons[currentIndex].classList.add('active');
+};

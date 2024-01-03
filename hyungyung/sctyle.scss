@@ -36,6 +36,13 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(20%);
+  transition:transform ease 1s, opacity 0.3s;
+  &.active{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 // nav css
@@ -365,6 +372,114 @@ nav {
           }
           &:hover{
             filter: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// section3 css
+#sec3{
+  .sec3_skills{
+    position: relative;
+    width: 100%;
+  .line {
+    position: absolute;
+    top: -20px;
+    width: 30.2%;
+    height: 2px;
+    background: #ff6726;
+  }
+  ul{
+    position: absolute;
+    left: 10.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    li{
+      margin-right: 26px;
+      img{
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  }
+  .inner{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slider_wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+      .sec3_slider {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+    
+        li {
+          padding: 10px;
+          margin: 5px;
+          width: 100%;
+          box-sizing: border-box;
+          cursor: pointer;
+          transition: transform 0.5s;
+    
+          &.on {
+            font-weight: bold;
+          }
+    
+          &:hover {
+            color: #ff6726;
+          }
+        }
+      }
+    
+      .btn_wrap {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    
+        .slide_btn {
+          cursor: pointer;
+          padding: 5px;
+          margin: 0 5px;
+          border: 1px solid #ccc;
+          transition: background-color 0.3s;
+    
+          &:hover {
+            background-color: #eee;
+          }
+        }
+    
+        .slide_icons {
+          list-style: none;
+          padding: 0;
+          display: flex;
+    
+          li {
+            cursor: pointer;
+            padding: 5px;
+            margin: 0 3px;
+            background-color: #ccc;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+    
+            &.active {
+              background-color: #ff6726;
+            }
+    
+            &:hover {
+              background-color: #aaa;
+            }
           }
         }
       }
