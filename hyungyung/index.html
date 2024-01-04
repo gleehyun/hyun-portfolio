@@ -2,6 +2,7 @@
 <html lang="Ko">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="./portfolio_img/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HYUNGYUNG LEE</title>
   <!-- fullpage -->
@@ -28,7 +29,7 @@
           <a href="#Num0"><img src="./portfolio_img/logo.png" alt="#" /></a>
         </li>
         <li><a href="#Num1">디자인 프로세스</a></li>
-        <li><a href="#Num2">개발 페이지</a></li>
+        <li><a href="#Num2">제작 페이지</a></li>
         <li><a href="#Num3">작은 작업들</a></li>
         <li><a href="#Num4">contact</a></li>
       </ul>
@@ -67,7 +68,7 @@
               </div>
             </div>
             <div class="sec1_picture_box">
-              <img src="./portfolio_img/my.png" alt="" />
+              <img src="./portfolio_img/my.png" alt="logo" />
             </div>
           </div>
           <div class="sec1_scroll_box">
@@ -98,9 +99,8 @@
                 <ul>
                   <li>CONNECT WITH<img src="./portfolio_img/site/connect_page.jpeg" alt=""></li>
                   <li>FestiStream<img src="./portfolio_img/site/festi_page.png" alt=""></li>
-                  <li>Safe Village<img src="./portfolio_img/site/connect_page.jpeg" alt=""></li>
                   <li>GODIVA redesign<img src="./portfolio_img/site/godiva_page.jpeg" alt=""></li>
-                  <li>AESOP resesign<img src="./portfolio_img/site/aesop_page.jpeg" alt=""></li>
+                  <li>Aēsop redesign<img src="./portfolio_img/site/aesop_page.jpeg" alt=""></li>
                 </ul>
             </div>
         </div>
@@ -113,47 +113,190 @@
           <li><img src="./portfolio_img/skills/css.png" alt="ai"></li>
           <li><img src="./portfolio_img/skills/js.png" alt="pr"></li>
           <li><img src="./portfolio_img/skills/jquery.png" alt="fig"></li>
-          <li><img src="./portfolio_img/skills/React.png" alt="fig"></li>
           <li><img src="./portfolio_img/skills/scss.png" alt="fig"></li>
         </ul>
         </div>
         <div class="inner">
           <div class="slider_wrap">
-            <!-- slider -->
-            <ul class="sec3_slider">
-              <li class="on" data-index="0">slider0</li>
-              <li data-index="1">slider1</li>
-              <li data-index="2">slider2</li>
-              <li data-index="3">slider3</li>
-              <li data-index="4">slider4</li>
-              <li data-index="5">slider5</li>
-              <li data-index="6">slider6</li>
-              <li data-index="7">slider7</li>
-            </ul>
             <!-- slide button -->
             <div class="btn_wrap">
-              <a href="left" class="slide_btn left">left</a>
-              <!-- pager button -->
-              <ul class="slide_icons">
-                <li class="active" data-index="0">0</li>
-                <li data-index="1">1</li>
-                <li data-index="2">2</li>
-                <li data-index="3">3</li>
-                <li data-index="4">4</li>
-                <li data-index="5">5</li>
-                <li data-index="6">6</li>
-                <li data-index="7">7</li>
+              <img class="slide_btn left" src="./portfolio_img/left.png" alt="left">
+                         <!-- slider -->
+                <ul class="sec3_slider">
+                  <li class="on" data-index="0">                
+                    <div class="slide_img">
+                      <img src="./portfolio_img/site/connect_page.jpeg" alt="connect">
+                    </div>
+                    <div class="slide_text_box">
+                      <div class="title">
+                        <div class="main_title">CONNECT WITH</div>
+                        <div class="subtitle">온라인 전시, 작가홍보 및 작품판매 사이트</div>
+                      </div>
+                      <p><b>참여도</b>100% (개인작업)</p>
+                      <div class="slide_skills">
+                        <p>Figma</p>
+                        <p>SCSS</p>
+                        <p>HTML</p>
+                        <p>Javascript</p>
+                      </div>
+                      <div class="hashtag">#pc #기획 #디자인 #페이지_제작"</div>
+                      <div class="moving">
+                        <a  onclick="openModal('myModal1', 'https://connect-with-ee110.web.app')">웹사이트</a>
+                        <a >기획/디자인</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li data-index="1">
+                    <div class="slide_img">
+                      <img src="./portfolio_img/site/godiva_page.jpeg" alt="godiva">
+                    </div>
+                    <div class="slide_text_box">
+                      <div class="title">
+                        <div class="main_title">GODIVA redesign</div>
+                        <div class="subtitle">브랜드의 특성을 살린 UI디자인</div>
+                      </div>
+                      <p><b>참여도</b>100% (개인작업)</p>
+                      <div class="slide_skills">
+                        <p>Figma</p>
+                        <p>SCSS</p>
+                        <p>HTML</p>
+                        <p>Javascript</p>
+                      </div>
+                      <div class="hashtag">#pc #기획 #디자인 #페이지_제작</div>
+                      <div class="moving">
+                        <a onclick="openModal('myModal2', 'https://godiva-494c2.web.app')">웹사이트</a>
+                        <a >기획/디자인</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li data-index="2">
+                      <div class="slide_img">
+                        <img src="./portfolio_img/site/aesop_page.jpeg" alt="aesop">
+                      </div>
+                    <div class="slide_text_box">
+                      <div class="title">
+                        <div class="main_title">Aēsop redesign</div>
+                        <div class="subtitle">브랜드의 이미지 사용자를 위한 UI개선</div>
+                      </div>
+                      <p><b>참여도</b>디자인90% 기획70%  페이지제작25% (협동작업)</p>
+                      <div class="slide_skills">
+                        <p>Figma</p>
+                        <p>SCSS</p>
+                        <p>HTML</p>
+                        <p>Javascript</p>
+                        <p>jQuery</p>
+                      </div>
+                      <div class="hashtag">#pc #mobile #기획 #디자인 #페이지_제작</div>
+                      <div class="moving">
+                        <a  onclick="openModal('myModal3', 'https://teamproject-product.web.app')">웹사이트</a>
+                        <a >기획/디자인</a>
+                      </div>
+                    </div>
+                  </li>
               </ul>
-              <a href="right" class="slide_btn right">right</a>
+              <img class="slide_btn right" src="./portfolio_img/right.png" alt="right">
             </div>
+            <!-- pager button -->
+            <ul class="slide_icons">
+              <li class="active" data-index="0"></li>
+              <li data-index="1"></li>
+              <li data-index="2"></li>
+            </ul>
           </div>
         </div>
       </div>
       <div id="sec4" class="section">
-        <div class="inner"></div>
+        <div class="sec4_skills">
+          <span class="line"></span>
+          <ul>
+          <li><img src="./portfolio_img/skills/html.png" alt="psd"></li>
+          <li><img src="./portfolio_img/skills/css.png" alt="ai"></li>
+          <li><img src="./portfolio_img/skills/js.png" alt="pr"></li>
+          <li><img src="./portfolio_img/skills/jquery.png" alt="fig"></li>
+          <li><img src="./portfolio_img/skills/scss.png" alt="fig"></li>
+        </ul>
+        </div>
+        <div class="inner">
+          <div class="slider_wrap">
+            <!-- slide button -->
+            <div class="btn_wrap">
+              <img class="slide_btn left02" src="./portfolio_img/left.png" alt="left02">
+                         <!-- slider -->
+                <ul class="sec4_slider">
+                  <li class="on" data-index="0"> 
+                    <img src="./portfolio_img/example/ex1.jpeg" alt="ex1">               
+                  </li>
+                  <li data-index="1">
+                    <img src="./portfolio_img/example/ex2.jpeg" alt="ex2">    
+                  </li>
+                  <li data-index="2">
+                    <img src="./portfolio_img/example/ex3.jpeg" alt="ex3">    
+                  </li>
+                  <li data-index="3">
+                    <img src="./portfolio_img/example/ex4.jpeg" alt="ex4">    
+                  </li>
+                  <li data-index="4">
+                    <img src="./portfolio_img/example/ex5.jpeg" alt="ex5">    
+                  </li>
+              </ul>
+              <img class="slide_btn right02" src="./portfolio_img/right.png" alt="right02">
+            </div>
+            <!-- pager button -->
+            <ul class="slide_icons02">
+              <li class="active" data-index="0">
+                <a target="_blank" href="https://museumtrip-48883.web.app">Example 1</a>
+              </li>
+              <li data-index="1">
+                <a target="_blank" href="https://am-project-82ab9.web.app">Example 2</a>
+              </li>
+              <li data-index="2">
+                <a target="_blank" href="https://movie-poster-52f4a.web.app">Example 3</a>
+              </li>
+              <li data-index="3">
+                <a target="_blank" href="https://todoit-login.web.app">Example 4</a>
+              </li>
+              <li data-index="4">
+                <a target="_blank" href="https://todolist-c87fd.web.app">Example 5</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div id="sec5" class="section">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="inner_wrap">
+            <div class="text_box">
+              <h1>제 포트폴리오를 봐주셔서 감사합니다.</h1>
+              <h2>궁금하신 것이 있으시거나<br> 저를 더 알고싶으시다면
+                아래를 확인해주세요!</h2>
+            </div>
+            <div class="contact">
+              <ul>
+                <li>
+                  <div class="icons">
+                    <img src="./portfolio_img/email.png" alt="email">
+                    <div class="site">E-Mail</div>
+                  </div>
+                  <div class="adress">gleehg16@ gmail.com</div>
+                </li>
+                <li>
+                  <div class="icons">
+                    <img src="./portfolio_img/mobile.png" alt="mobile">
+                    <div class="site">moblie</div>
+                  </div>
+                  <div class="adress">010 . 2672 . 9023</div>
+                </li>
+                <li>
+                  <div class="icons"> 
+                    <img src="./portfolio_img/git.png" alt="git">
+                    <div class="site">github</div>
+                  </div>
+                  <div class="adress">gleehyun</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -90,53 +90,162 @@ function display(hgJsons) {
   });
 
   designProcess.innerHTML = designProcessEl;
+  
 }
 
 init();
 
-
-const s_Slider = document.querySelectorAll('.sec3_slider li');
-const s_Icons = document.querySelectorAll('.slide_icons li');
-const s_Left = document.querySelector('.slide_btn.left');
-const s_Right = document.querySelector('.slide_btn.right');
-
-let currentIndex = 0;
+// sec3 slider==============
+const s_Slider = document.querySelectorAll(".sec3_slider li");
+const s_Icons = document.querySelectorAll(".slide_icons li");
+const s_Left = document.querySelector(".slide_btn.left");
+const s_Right = document.querySelector(".slide_btn.right");
 
 const s_reset = () => {
   s_Slider.forEach((elem, idx) => {
-    s_Slider[idx].classList.remove('on');
-    s_Icons[idx].classList.remove('active');
+    s_Slider[idx].classList.remove("on");
+    s_Icons[idx].classList.remove("active");
   });
 };
 
 s_Icons.forEach((li) => {
-  li.addEventListener('click', (e) => {
+  li.addEventListener("click", (e) => {
     let target = e.target.dataset.index;
+    console.log(target);
     s_reset();
-    if (li.tagName === 'LI') {
-      currentIndex = target;
-      updateSlide();
+    if (li.tagName === "LI") {
+      for (let i = 0; i < s_Icons.length; i++) {
+        if (target == i) {
+          s_Slider[i].classList.add("on");
+          s_Icons[i].classList.add("active");
+        }
+      }
     }
   });
 });
 
-const next = () => {
+const next = (e)=>{
+  e.preventDefault();
+  let crtSlide=  document.querySelector(".sec3_slider li.on");
+  let i = crtSlide.dataset.index;
   s_reset();
-  currentIndex = (currentIndex + 1) % s_Slider.length;
-  updateSlide();
+  i++;
+  if (i >= s_Slider.length) {
+    i = 0;
+  }
+  s_Slider[i].classList.add('on');
+  s_Icons[i].classList.add('active');
 };
 
 s_Right.addEventListener('click', next);
 
-const prev = () => {
+const prev = (e) => {
+  e.preventDefault();
+  let crtSlide = document.querySelector('.sec3_slider li.on');
+  let i = crtSlide.dataset.index;
   s_reset();
-  currentIndex = (currentIndex - 1 + s_Slider.length) % s_Slider.length;
-  updateSlide();
+  i--;
+  if (i < 0) {
+    i = s_Slider.length - 1;
+  }
+  s_Slider[i].classList.add('on');
+  s_Icons[i].classList.add('active');
 };
 
 s_Left.addEventListener('click', prev);
 
-const updateSlide = () => {
-  s_Slider[currentIndex].classList.add('on');
-  s_Icons[currentIndex].classList.add('active');
+// sec4 slider=======================================
+const s_Slider02 = document.querySelectorAll(".sec4_slider li");
+const s_Icons02 = document.querySelectorAll(".slide_icons02 li");
+const s_Left02 = document.querySelector(".slide_btn.left02");
+const s_Right02 = document.querySelector(".slide_btn.right02");
+
+const s_reset02 = () => {
+  s_Slider02.forEach((elem, idx) => {
+    s_Slider02[idx].classList.remove("on");
+    s_Icons02[idx].classList.remove("active");
+  });
 };
+
+s_Icons02.forEach((li) => {
+  li.addEventListener("click", (e) => {
+    let target = e.target.dataset.index;
+    console.log(target);
+    s_reset02();
+    if (li.tagName === "LI") {
+      for (let i = 0; i < s_Icons02.length; i++) {
+        if (target == i) {
+          s_Slider02[i].classList.add("on");
+          s_Icons02[i].classList.add("active");
+        }
+      }
+    }
+  });
+});
+
+const next02 = (e) => {
+  e.preventDefault();
+  let crtSlide = document.querySelector(".sec4_slider li.on");
+  let i = crtSlide ? crtSlide.dataset.index : 0;
+  s_reset02();
+  i++;
+  if (i >= s_Slider02.length) {
+    i = 0;
+  }
+  s_Slider02[i].classList.add("on");
+  s_Icons02[i].classList.add("active");
+};
+
+s_Right02.addEventListener("click", next02);
+
+const prev02 = (e) => {
+  e.preventDefault();
+  let crtSlide = document.querySelector(".sec4_slider li.on");
+  let i = crtSlide ? crtSlide.dataset.index : s_Slider02.length - 1;
+  s_reset02();
+  i--;
+  if (i < 0) {
+    i = s_Slider02.length - 1;
+  }
+  s_Slider02[i].classList.add("on");
+  s_Icons02[i].classList.add("active");
+};
+
+s_Left02.addEventListener("click", prev02);
+// modal===============================================
+
+let modalCounter = 1;
+
+function openModal(modalId, modalUrl) {
+  const modalFrameId = "modalFrame" + modalId.charAt(modalId.length - 1);
+
+  let modalContainer = document.querySelector('#modalContainer');
+
+  if (!modalContainer) {
+    modalContainer = document.createElement('div');
+    modalContainer.id = 'modalContainer';
+    document.body.appendChild(modalContainer);
+  }
+
+  const modalElement = document.createElement('div');
+  modalElement.id = 'myModal' + modalCounter;
+  modalElement.className = 'modal';
+  modalElement.innerHTML = `
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('myModal${modalCounter}')">&times;</span>
+      <iframe id="${modalFrameId}" src="${modalUrl}" width="100%" height="100%" frameborder="0" style="overflow: hidden;"></iframe>
+    </div>
+  `;
+
+  modalContainer.appendChild(modalElement);
+
+  document.querySelector(`#myModal${modalCounter}`).style.display = 'block';
+
+  modalCounter++;
+}
+
+function closeModal(modalId) {
+  const modalFrameId = "modalFrame" + modalId.charAt(modalId.length - 1);
+  document.querySelector(`#${modalFrameId}`).src = "";
+  document.querySelector(`#${modalId}`).style.display = 'none';
+}

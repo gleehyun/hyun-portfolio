@@ -15,7 +15,6 @@ setTimeout(function () {
     loginPage.style.visibility = "visible";
 }, 3000);
 
-// login
 function setLogin() {
     var id = document.getElementById("id").value;
     var pw = document.getElementById("pw").value;
