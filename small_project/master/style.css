@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .video_background::before {
+  content: "";
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.49) 0%, rgba(30, 30, 30, 0.12) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container .video_background video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.container .contents_wrap .logo {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+.container .contents_wrap .logo img {
+  width: 80px;
+}
+.container .contents_wrap .contents {
+  position: absolute;
+  left: 100px;
+  bottom: 117px;
+  animation: showingLeft 1.5s 1s linear;
+  animation-fill-mode: both;
+}
+@keyframes showingLeft {
+  0% {
+    opacity: 0;
+    margin-left: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+.container .contents_wrap .contents .text_contents {
+  margin-bottom: 69px;
+}
+.container .contents_wrap .contents .text_contents .subtitle {
+  margin-bottom: 2px;
+  width: 280px;
+  font-size: 36px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #b88232 28.93%, #ffe2b6 68.37%, #b88232 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .contents_wrap .contents .text_contents .title {
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.container .contents_wrap .contents .text_contents p {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.container .contents_wrap .contents .btn_contents {
+  font-size: 20px;
+  font-weight: 300;
+}
+.container .contents_wrap .contents .btn_contents a {
+  padding: 5px 40px;
+  border-radius: 40px;
+  border: 1px solid #ffe2b6;
+  color: #fff;
+  margin-right: 20px;
+  transition: 0.3s ease-in;
+}
+.container .contents_wrap .contents .btn_contents a:hover {
+  background: rgba(255, 255, 255, 0.8549019608);
+  color: #b88232;
+}
+.container .contents_wrap .trigger {
+  width: 40px;
+  height: 36px;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .contents_wrap .trigger span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  transition: 0.3s;
+}
+.container .contents_wrap .trigger span:nth-child(1) {
+  top: 0;
+}
+.container .contents_wrap .trigger span:nth-child(2) {
+  top: 50%;
+}
+.container .contents_wrap .trigger span:nth-child(3) {
+  top: 100%;
+}
+.container .contents_wrap .trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.container .contents_wrap .trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.container .contents_wrap .trigger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.container .contents_wrap .modal_gnb {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.container .contents_wrap .modal_gnb .gnb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container .contents_wrap .modal_gnb .gnb a {
+  margin-bottom: 60px;
+  color: #fff;
+  font-size: 48px;
+  display: block;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.3s;
+  animation: showGnb 0.5s linear;
+  animation-fill-mode: both;
+}
+@keyframes showGnb {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.container .contents_wrap .modal_gnb .gnb a:nth-child(1) {
+  animation-delay: 0.15s;
+}
+.container .contents_wrap .modal_gnb .gnb a:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.container .contents_wrap .modal_gnb .gnb a:nth-child(3) {
+  animation-delay: 0.35s;
+}
+.container .contents_wrap .modal_gnb .gnb a:nth-child(4) {
+  animation-delay: 0.45s;
+}
+.container .contents_wrap .modal_gnb .gnb a:nth-child(5) {
+  animation-delay: 0.55s;
+}
+.container .contents_wrap .modal_gnb .gnb a:hover {
+  color: #b88232;
+}/*# sourceMappingURL=style.css.map */

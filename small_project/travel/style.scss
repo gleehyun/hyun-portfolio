@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,300;7..72,400;7..72,500;7..72,600&family=Nanum+Myeongjo:wght@800&display=swap");
+
+// font-family: 'Literata', serif;
+// font-family: 'Nanum Myeongjo', serif;
+
+// common css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+//
+
+//
+body {
+  -webkit-transition: none;
+  transition: none;
+  .tab_inner {
+    input[name="tabmenu"] {
+      display: none;
+    }
+    input[id="tab1"]:checked ~ .tabs .items {
+      left: 0;
+    }
+    input[id="tab2"]:checked ~ .tabs .items {
+      left: -100%;
+    }
+    input[id="tab3"]:checked ~ .tabs .items {
+      left: -200%;
+    }
+    input[id="tab1"]:checked ~ .btn label[for="tab1"],
+    input[id="tab2"]:checked ~ .btn label[for="tab2"],
+    input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+      color: crimson;
+    }
+    input[id="tab1"]:checked ~ .tabs .items div:nth-child(1) h1,
+    input[id="tab2"]:checked ~ .tabs .items div:nth-child(2) h1,
+    input[id="tab3"]:checked ~ .tabs .items div:nth-child(3) h1 {
+      opacity: 1;
+    }
+    .tabs {
+      overflow: hidden;
+      position: relative;
+      height: 100vh;
+      .items {
+        width: 300%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        .item {
+          width: 33.33%;
+          height: 100vh;
+          float: left;
+          box-sizing: border-box;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            z-index: 1;
+          }
+          &:nth-child(1)::before {
+            background: linear-gradient(rgb(255, 118, 118), transparent);
+          }
+          &:nth-child(2)::before {
+            background: linear-gradient(rgb(255, 190, 51), transparent);
+          }
+          &:nth-child(3)::before {
+            background: linear-gradient(rgb(255, 111, 45), transparent);
+          }
+          .contry {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            z-index: 1;
+            color: #fff;
+            font-family: Literata;
+            font-size: 60px;
+            font-weight: 400;
+            letter-spacing: 21.12px;
+          }
+          .gallery {
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            li {
+              position: relative;
+              overflow: hidden;
+              border-right: 2px solid #000;
+              flex: 1;
+              transition: 0.5s;
+              filter: grayscale(1);
+              &:last-child {
+                border: none;
+              }
+            }
+            &:hover li {
+              flex: 1;
+            }
+            li:hover {
+              flex: 1.5;
+              filter: none;
+            }
+            .content {
+              position: absolute;
+              width: 100%;
+              bottom: -323px;
+              color: #fff;
+              background: #000;
+              border-radius: 10px 10px 0 0;
+              box-shadow: 0px -50px 30px 0px rgba(0, 0, 0, 0.25);
+              height: 323px;
+              text-align: center;
+              font-family: "Literata", serif;
+              letter-spacing: 1px;
+              border-radius: 30px 30px 0px 0px;
+              transition: 0.5s;
+              .title {
+                margin-top: 24px;
+                margin-bottom: 20px;
+                h1 {
+                  font-size: 32px;
+                  font-weight: 700;
+                  margin-bottom: 7px;
+                }
+                h3 {
+                  font-family: "Nanum Myeongjo", serif;
+                  font-size: 20px;
+                  font-weight: 800;
+                }
+              }
+              hr {
+                margin-bottom: 18px;
+              }
+              .time_all {
+                margin-bottom: 19px;
+                p {
+                  margin-bottom: 1px;
+                }
+                .open_time {
+                  margin-bottom: 23px;
+                }
+                .week {
+                  font-size: 17px;
+                  font-weight: 600;
+                }
+                .time {
+                  font-size: 14px;
+                  font-weight: 300;
+                }
+              }
+              .adress {
+                font-size: 14px;
+                font-weight: 400;
+              }
+            }
+            li:hover .content {
+              transition-delay: 0.2s;
+              bottom: 50px;
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      bottom: 0;
+      label {
+        color: #fff;
+        display: inline-block;
+        font-size: 14px;
+        margin: 0 95px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.france {
+  &:nth-child(1) {
+    background: url(./travel_image/france1.png) no-repeat center center;
+  }
+  &:nth-child(2) {
+    background: url(./travel_image/france2.png) no-repeat center center;
+  }
+  &:nth-child(3) {
+    background: url(./travel_image/france3.png) no-repeat center center;
+  }
+  &:nth-child(4) {
+    background: url(./travel_image/france4.png) no-repeat center center;
+  }
+}
+.germany {
+  &:nth-child(1) {
+    background: url(./travel_image/germany1.png) no-repeat center center;
+  }
+  &:nth-child(2) {
+    background: url(./travel_image/germany2.png) no-repeat center center;
+  }
+  &:nth-child(3) {
+    background: url(./travel_image/germany3.png) no-repeat center center;
+  }
+  &:nth-child(4) {
+    background: url(./travel_image/germany4.png) no-repeat center center;
+  }
+}
+.uk {
+  &:nth-child(1) {
+    background: url(./travel_image/uk1.png) no-repeat center center;
+  }
+  &:nth-child(2) {
+    background: url(./travel_image/uk2.png) no-repeat center center;
+  }
+  &:nth-child(3) {
+    background: url(./travel_image/uk3.png) no-repeat center center;
+  }
+  &:nth-child(4) {
+    background: url(./travel_image/uk4.png) no-repeat center center;
+  }
+}

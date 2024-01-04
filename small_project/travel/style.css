@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,300;7..72,400;7..72,500;7..72,600&family=Nanum+Myeongjo:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  transition: none;
+}
+body .tab_inner input[name=tabmenu] {
+  display: none;
+}
+body .tab_inner input[id=tab1]:checked ~ .tabs .items {
+  left: 0;
+}
+body .tab_inner input[id=tab2]:checked ~ .tabs .items {
+  left: -100%;
+}
+body .tab_inner input[id=tab3]:checked ~ .tabs .items {
+  left: -200%;
+}
+body .tab_inner input[id=tab1]:checked ~ .btn label[for=tab1],
+body .tab_inner input[id=tab2]:checked ~ .btn label[for=tab2],
+body .tab_inner input[id=tab3]:checked ~ .btn label[for=tab3] {
+  color: crimson;
+}
+body .tab_inner input[id=tab1]:checked ~ .tabs .items div:nth-child(1) h1,
+body .tab_inner input[id=tab2]:checked ~ .tabs .items div:nth-child(2) h1,
+body .tab_inner input[id=tab3]:checked ~ .tabs .items div:nth-child(3) h1 {
+  opacity: 1;
+}
+body .tab_inner .tabs {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+body .tab_inner .tabs .items {
+  width: 300%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+body .tab_inner .tabs .items .item {
+  width: 33.33%;
+  height: 100vh;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+}
+body .tab_inner .tabs .items .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 1;
+}
+body .tab_inner .tabs .items .item:nth-child(1)::before {
+  background: linear-gradient(rgb(255, 118, 118), transparent);
+}
+body .tab_inner .tabs .items .item:nth-child(2)::before {
+  background: linear-gradient(rgb(255, 190, 51), transparent);
+}
+body .tab_inner .tabs .items .item:nth-child(3)::before {
+  background: linear-gradient(rgb(255, 111, 45), transparent);
+}
+body .tab_inner .tabs .items .item .contry {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+  color: #fff;
+  font-family: Literata;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 21.12px;
+}
+body .tab_inner .tabs .items .item .gallery {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+}
+body .tab_inner .tabs .items .item .gallery li {
+  position: relative;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  flex: 1;
+  transition: 0.5s;
+  filter: grayscale(1);
+}
+body .tab_inner .tabs .items .item .gallery li:last-child {
+  border: none;
+}
+body .tab_inner .tabs .items .item .gallery:hover li {
+  flex: 1;
+}
+body .tab_inner .tabs .items .item .gallery li:hover {
+  flex: 1.5;
+  filter: none;
+}
+body .tab_inner .tabs .items .item .gallery .content {
+  position: absolute;
+  width: 100%;
+  bottom: -323px;
+  color: #fff;
+  background: #000;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px -50px 30px 0px rgba(0, 0, 0, 0.25);
+  height: 323px;
+  text-align: center;
+  font-family: "Literata", serif;
+  letter-spacing: 1px;
+  border-radius: 30px 30px 0px 0px;
+  transition: 0.5s;
+}
+body .tab_inner .tabs .items .item .gallery .content .title {
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+body .tab_inner .tabs .items .item .gallery .content .title h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+body .tab_inner .tabs .items .item .gallery .content .title h3 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+body .tab_inner .tabs .items .item .gallery .content hr {
+  margin-bottom: 18px;
+}
+body .tab_inner .tabs .items .item .gallery .content .time_all {
+  margin-bottom: 19px;
+}
+body .tab_inner .tabs .items .item .gallery .content .time_all p {
+  margin-bottom: 1px;
+}
+body .tab_inner .tabs .items .item .gallery .content .time_all .open_time {
+  margin-bottom: 23px;
+}
+body .tab_inner .tabs .items .item .gallery .content .time_all .week {
+  font-size: 17px;
+  font-weight: 600;
+}
+body .tab_inner .tabs .items .item .gallery .content .time_all .time {
+  font-size: 14px;
+  font-weight: 300;
+}
+body .tab_inner .tabs .items .item .gallery .content .adress {
+  font-size: 14px;
+  font-weight: 400;
+}
+body .tab_inner .tabs .items .item .gallery li:hover .content {
+  transition-delay: 0.2s;
+  bottom: 50px;
+}
+body .tab_inner .btn {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  bottom: 0;
+}
+body .tab_inner .btn label {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 95px;
+  cursor: pointer;
+}
+
+.france:nth-child(1) {
+  background: url(./travel_image/france1.png) no-repeat center center;
+}
+.france:nth-child(2) {
+  background: url(./travel_image/france2.png) no-repeat center center;
+}
+.france:nth-child(3) {
+  background: url(./travel_image/france3.png) no-repeat center center;
+}
+.france:nth-child(4) {
+  background: url(./travel_image/france4.png) no-repeat center center;
+}
+
+.germany:nth-child(1) {
+  background: url(./travel_image/germany1.png) no-repeat center center;
+}
+.germany:nth-child(2) {
+  background: url(./travel_image/germany2.png) no-repeat center center;
+}
+.germany:nth-child(3) {
+  background: url(./travel_image/germany3.png) no-repeat center center;
+}
+.germany:nth-child(4) {
+  background: url(./travel_image/germany4.png) no-repeat center center;
+}
+
+.uk:nth-child(1) {
+  background: url(./travel_image/uk1.png) no-repeat center center;
+}
+.uk:nth-child(2) {
+  background: url(./travel_image/uk2.png) no-repeat center center;
+}
+.uk:nth-child(3) {
+  background: url(./travel_image/uk3.png) no-repeat center center;
+}
+.uk:nth-child(4) {
+  background: url(./travel_image/uk4.png) no-repeat center center;
+}/*# sourceMappingURL=style.css.map */
