@@ -503,7 +503,7 @@ nav ul li:nth-child(5) {
   height: 40px;
   border-radius: 30px;
   background: #ff6726;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-weight: 500;
   display: flex;
@@ -576,7 +576,7 @@ nav ul li:nth-child(5) {
 }
 .modal .close:hover {
   background: #ff6726;
-  color: #FFF;
+  color: #fff;
 }
 .modal iframe {
   border-radius: 20px;
@@ -589,7 +589,7 @@ nav ul li:nth-child(5) {
 #sec4 .sec4_skills .line {
   position: absolute;
   top: -20px;
-  width: 25%;
+  width: 29.8%;
   height: 2px;
   background: #ff6726;
 }
@@ -609,6 +609,7 @@ nav ul li:nth-child(5) {
   height: 40px;
 }
 #sec4 .inner {
+  margin-top: 30px;
   height: 65vh;
   width: 100%;
   display: flex;
@@ -698,7 +699,7 @@ nav ul li:nth-child(5) {
   color: #ff6726;
 }
 #sec4 .inner .slider_wrap .slide_icons02 li a {
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
   font-weight: 400;
   transition: all 0.3s ease;
@@ -744,7 +745,7 @@ nav ul li:nth-child(5) {
   justify-content: center;
   align-items: center;
   padding: 10px 40px;
-  background: #FF6726;
+  background: #ff6726;
   border-radius: 50px;
   margin-right: 15px;
 }
@@ -755,7 +756,7 @@ nav ul li:nth-child(5) {
   margin-right: 10px;
 }
 #sec5 .inner .inner_wrap .contact ul li .icons .site {
-  color: #FFF;
+  color: #fff;
   font-size: 28px;
   font-weight: 600;
 }
