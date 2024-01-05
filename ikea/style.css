@@ -152,6 +152,7 @@ header .header_bottom .header_personal img {
   display: flex;
   width: 100%;
   height: 555px;
+  margin-bottom: 120px;
 }
 #sec1 .banner img {
   width: 986px;
@@ -193,14 +194,40 @@ header .header_bottom .header_personal img {
   font-size: 16px;
   font-weight: 600;
 }
+#sec1 .sec1_best_categories h1 {
+  margin-bottom: 33px;
+}
 #sec1 .sec1_best_categories .sec1_slider {
   display: flex;
   gap: 20px;
 }
 #sec1 .sec1_best_categories .sec1_slider .sec1_best_item {
+  position: relative;
   height: 232px;
+  margin-bottom: 20px;
 }
 #sec1 .sec1_best_categories .sec1_slider .sec1_best_item img {
+  position: relative;
   width: 174px;
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  filter: brightness(0.8);
+  transition: all 0.3s ease-in-out;
+}
+#sec1 .sec1_best_categories .sec1_slider .sec1_best_item img:hover {
+  filter: none;
+  transform: scale(1.05);
+}
+#sec1 .sec1_best_categories .sec1_slider .sec1_best_item p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background: #fff;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
