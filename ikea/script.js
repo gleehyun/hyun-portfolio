@@ -13,10 +13,10 @@ function display(ikeaJsons) {
   let sec1Bestitems = "";
   ikeaJsons.bestCategory.forEach((ikeaJson) => {
     sec1Bestitems += `
-    <div class="sec1_best_item">
+    <li class="sec1_best_item">
       <img src="${ikeaJson.bestImg}" alt="${ikeaJson.bestAlt}"/>
       <p class"sec1_best_name">${ikeaJson.bestText}</p>
-    </div>
+    </li>
     `;
   });
   sec1Slider.innerHTML = sec1Bestitems;

@@ -1,0 +1,44 @@
+{
+    "DesignProcess":[
+        {
+            "ProcessTitle":"이해하기",
+            "ProcessDetail":[
+                "사용자 인터뷰",
+                "소비자 설문조사",
+                "시장조사"
+            ]
+        },
+        {
+            "ProcessTitle":"공감하기",
+            "ProcessDetail":[
+                "페르소나",
+                "사용자 시나리오",
+                "공감지도",
+                "고객 여정지도"
+            ]
+        },
+        {
+            "ProcessTitle":"아이디어",
+            "ProcessDetail":[
+                "브레인 스토밍",
+                "벤치마킹/레퍼런스",
+                "무드보드",
+                "스케치"
+            ]
+        },
+        {
+            "ProcessTitle":"프로토타입",
+            "ProcessDetail":[
+                "사용자 플로우",
+                "와이어 프레임"
+            ]
+        },
+        {
+            "ProcessTitle":"테스트",
+            "ProcessDetail":[
+                "사용성 테스트",
+                "보완, 피드백"
+            ]
+        }
+    ]
+}
